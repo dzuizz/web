@@ -4,16 +4,20 @@
 *  File : styles.css
 *******************************************/
 
-#Silver{
+.Silver{
     color: silver;
 }
 
-#Gold{
+.Gold{
     color: gold;
 }
 
-#Bronze{
+.Bronze{
     color: brown;
+}
+
+.Year {
+    color: red;
 }
 
 #navbar {
@@ -22,10 +26,6 @@
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
-}
-
-#Year {
-    color: red;
 }
 
 li a {
