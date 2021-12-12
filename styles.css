@@ -24,16 +24,20 @@
     color: purple;
 }
 
+li div {
+    margin: 5px
+}
+
 #navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: seagreen;
+    background-color: #333;
 }
 
-li div {
-    margin: 5px
+li {
+    float: left;
 }
 
 li a {
@@ -44,14 +48,12 @@ li a {
     text-decoration: none;
 }
 
-li a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-  
 li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
 }
 
 .tooltip {
