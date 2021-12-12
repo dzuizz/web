@@ -34,6 +34,13 @@ li {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
 }
 
 li a {
@@ -47,7 +54,7 @@ li a {
 li a:hover:not(.active) {
     background-color: #111;
 }
-
+  
 .active {
     background-color: #04AA6D;
 }
@@ -71,17 +78,7 @@ li a:hover:not(.active) {
     top: -5px;
     left: 110%;
 }
-  
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent black transparent transparent;
-}
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
