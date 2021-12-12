@@ -20,6 +20,10 @@
     color: red;
 }
 
+.Perfect {
+    color: purple;
+}
+
 #navbar {
     list-style-type: none;
     margin: 0;
@@ -86,4 +90,8 @@ li a:hover:not(.active) {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+div {
+    float: left;
 }
