@@ -1,88 +1,9 @@
 /******************************************
-*  Author : Author   
+*  Author : Ahmad Dzuizz Annajib   
 *  Created On : Sun Dec 12 2021
 *  File : styles.css
 *******************************************/
 
-.Silver{
-    color: silver;
-}
-
-.Gold{
-    color: gold;
-}
-
-.Bronze{
-    color: brown;
-}
-
-.Year {
-    color: red;
-}
-
-.Perfect {
-    color: purple;
-}
-
-li {
-    margin: 5px;
-    z-index: -1;
-}
-
-#navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-#navbar li {
-    float: left;
-    margin: 0px;
-    z-index: 10;
-}
-
-#navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#navbar li a:hover:not(.active) {
-    background-color: #111;
-}
-  
-.active {
-    background-color: #04AA6D;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-  
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: -5px;
-    left: 110%;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
