@@ -12,15 +12,28 @@
         gtag('config', 'UA-154885375-1');
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ahmad Dzuizz</title>
 </head>
 
 <body>
-    <ul class = "m-0 p-0 w-full z-10 top-0 list-none fixed overflow-hidden bg-gray-800"> <!-- Navigation Bar -->
-        <li class = "m-0 z-10 float-left"><a class = "text-white text-centre block p-4 bg-green-600" href="index.html">Main Page</a></li>
-        <li class = "m-0 z-10 float-left"><a class = "text-white text-centre block p-4 hover:bg-black" href="family.html">My Family</a></li>
-    </ul>
-    
-    <div class = "m-2">
+    <nav> <!-- Navigation Bar -->
+        <ul class = "m-0 p-0 w-full z-10 top-0 list-none fixed overflow-hidden bg-gray-800">
+            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 hover:bg-slate-900" href="index.html"><i class = "h-full fa fa-fw fa-home"></i> Main Page</a></li>
+            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 bg-green-600" href="family.html"><i class = "h-full fa fa-fw fa-user-circle-o"></i> My Family</a></li>
+            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 hover:bg-slate-900" href="wordle.html"><i class = "h-full fa fa-fw fa-user-circle-o"></i> Wordle</a></li>
+        </ul>
+    </nav>
+    <div class = "m-2 mt-16">
+        <button class="border-2 border-green-500 mx-2 rounded hover:bg-green-500 focus:outline-none focus:ring duration-75" type="button" name="My Father"><a href="ayah.html" class="mx-1">The Father (Ainun Najib)</a></button>
+        <button class="border-2 border-sky-500   mx-2 rounded hover:bg-sky-500   focus:outline-none focus:ring duration-75" type="button" name="My 1st Brother"><a href="index.html" class="mx-1">The Eldest Brother (Dzuizz)</a></button>
+        <button class="border-2 border-amber-500 mx-2 rounded hover:bg-amber-500 focus:outline-none focus:ring duration-75" type="button" name="My 1st Brother"><a href="dzinnun.html" class="mx-1">The Second Brother (Dzinnun)</a></button>
+        <button class="border-2 border-red-400   mx-2 rounded hover:bg-red-400   focus:outline-none focus:ring duration-75" type="button" name="My only Sister"><a href="aisyah.html" class="mx-1">The only Sister (Aisyah)</a></button>
+    </div>
+    <div class="flex flex-nonwrap">
+        <div class="m-2 mt-4"><img src="familyImage.jpg"></div>
+        <p class="place-self-center">
+            <b class="text-7xl">The "Gak Jelas" Family</b><br>The family with all types of personalities and behaviours.
+        </p>
     </div>
 </body>
