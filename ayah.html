@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-154885375-1');
-</script>
-<title>
-    Father's website
-</title>
-    <div>
-        <div style="float: left; margin: 10px">
-            <img src="ayah.jpg"/>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154885375-1');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ainun Najib</title>
+</head>
+<body>
+    <nav> <!-- Navigation Bar -->
+        <ul class = "m-0 p-0 w-full z-10 top-0 list-none fixed overflow-hidden bg-gray-800">
+            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 hover:bg-slate-900" href="index.html"><i class = "h-full fa fa-fw fa-home"></i> Main Page</a></li>
+            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 bg-green-600" href="family.html"><i class = "h-full fa fa-fw fa-user-circle-o"></i> My Family</a></li>
+            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 hover:bg-slate-900" href="wordle.html"><i class = "h-full fa fa-fw fa-user-circle-o"></i> Wordle</a></li>
+        </ul>
+    </nav>
+    <div class="m-2 mt-16">
+        <div>
+            <button class="border-2 border-sky-500   mx-2 rounded hover:bg-sky-500   focus:outline-none focus:ring duration-75" type="button" name="Dzuizz"><a href="index.html" class="mx-1">My Eldest Son (Dzuizz)</a></button>
+            <button class="border-2 border-amber-500 mx-2 rounded hover:bg-amber-500 focus:outline-none focus:ring duration-75" type="button" name="Dzinnun"><a href="dzinnun.html" class="mx-1">My Second Son (Dzinnun)</a></button>
+            <button class="border-2 border-red-400   mx-2 rounded hover:bg-red-400   focus:outline-none focus:ring duration-75" type="button" name="Aisyah"><a href="aisyah.html" class="mx-1">My only Daughter (Aisyah)</a></button>
         </div>
-        <div style="float: left; margin: 10px">
+        <div class="float-left m-5"><img src="ayah.jpg"/></div>
+        <div class="float-left m-5">
             <p>
-                <h3>Hello!My name is Ainun Najib.<br>Iam the parent of Dzuizz, Dzinnun and Aisyah.
-                <br>I work at GRAB<mark>(Not the taxi driver)</mark></h3>
+                <h3>Hello! My name is Ainun Najib.<br>
+                    I am the parent of Dzuizz, Dzinnun and Aisyah.<br>
+                    I work at <b class="text-green-500">GRAB</b><mark>(Not the taxi driver)</mark>
+                </h3>
             </p>
-            <a href="index.html">My eldest child, Dzuizz</a>
-            <a href="brother.html">My second child, Dzinnun</a>
-            <a href="aisyah.html">My youngest child, Aisyah</a>
         </div>
     </div>
-</head>
+</body>
