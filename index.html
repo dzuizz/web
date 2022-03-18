@@ -11,31 +11,45 @@
         
         gtag('config', 'UA-154885375-1');
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            * {@apply p-0 m-0 no-underline list-none box-border;}
+        }
+    </style>
+
     <title>Ahmad Dzuizz</title>
 </head>
 
-<body>
-    <nav> <!-- Navigation Bar -->
-        <ul class = "m-0 p-0 w-full z-10 top-0 list-none fixed overflow-hidden bg-gray-800">
-            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 bg-green-600" href="index.html"><i class = "h-full fa fa-fw fa-home"></i> Main Page</a></li>
-            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 hover:bg-slate-900" href="family.html"><i class = "h-full fa fa-fw fa-user-circle-o"></i> My Family</a></li>
-            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 hover:bg-slate-900" href="wordle.html"><i class = "h-full fa fa-fw fa-user-circle-o"></i> Wordle</a></li>
+<body class="font-mono">
+    <nav class="bg-[#0082e6] h-20 w-full top-0 fixed" id="navbar">
+        <input type="checkbox" class="hidden" id="check">
+        <label for="check" class="checkbtn mr-[40px] leading-[80px] text-[30px] text-white float-right cursor-pointer hidden"><i class="fas fa-bars"></i></label>
+        <label class="logo pt-0 px-[100px] font-bold text-white text-[35px] leading-[80px]">Dzuizz.com</label>
+        <ul class="mr-[20px] float-right">
+          <li class="mt-0 mx-[5px] leading-[80px] inline-block"><a class="text-white font-[17px] pt-[7px] px-[13px] rounded-[3px] capitalize hover:duration-500 bg-[#1b9bff]" href="#"><i class = "h-full fa fa-fw fa-home"></i> Home</a></li>
+          <li class="mt-0 mx-[5px] leading-[80px] inline-block"><a class="text-white font-[17px] pt-[7px] px-[13px] rounded-[3px] capitalize hover:duration-500 hover:bg-[#1b9bff]" href="family.html"><i class="fa fa-user-circle"></i> My Family</a></li>
         </ul>
+      </nav>
     </nav>
     
     <main class = "m-2">
-        <div class = "float-left my-12"><img src = "dzuizz.jpg" alt = "My Picture" width = "320"/></div>
-        <div class = "float-left m-9 my-14">
-            <p>
+        <div class = "my-20 float-left"><img src = "dzuizz.jpg" alt = "My Picture" width = "320"/></div>
+        <div class = "float-left mx-9 my-24">
+            <p class="flex-wrap">
                 My name is Ahmad Dzuizz Annajib.<br>
-                I was born in Indonesia and have 2 brother and a sister.<br>
+                I was born in Indonesia and have 2 brothers and a sister.<br>
                 I currently study at <a class = "underline text-sky-700" href = "https://irsyad.sg/">Madrasah Irsyad Zuhri Al-Islamiah</a>.<br>
                 My primary strength at school is <b class="text-red-500">Math</b> and my secondary strength is <b class="text-sky-700">Science</b>.<br>
-                    Being a technology enthusiast, I pursued the programming interest in 2014 when I was 4 years old <i>with LEGO Education WeDo 2.0</i>.<br>
+                Being a technology enthusiast, I pursued the programming interest in 2014 <i>with LEGO Education WeDo 2.0</i>.<br>
                 I have been learning <b class="text-amber-500">C++</b>, <b class="text-sky-600">Pyt</b><b class="text-yellow-300">hon</b>, <b>HTML</b>, and others, since then.<br>
             </p>
+            <br>
             <b class = "my-2 text-2xl">My Achievements</b>
             <div> <!--2021-->
                 <h3 class = "text-red-500">2021</h3>
