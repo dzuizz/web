@@ -16,15 +16,17 @@
     <title>Ahmad Dzuizz</title>
 </head>
 
-<body>
-    <nav> <!-- Navigation Bar -->
-        <ul class = "m-0 p-0 w-full z-10 top-0 list-none fixed overflow-hidden bg-gray-800">
-            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 hover:bg-slate-900" href="index.html"><i class = "h-full fa fa-fw fa-home"></i> Main Page</a></li>
-            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 bg-green-600" href="family.html"><i class = "h-full fa fa-fw fa-user-circle-o"></i> My Family</a></li>
-            <li class = "m-0 z-10 float-left border-r divide-white"><a class = "text-white text-centre block p-4 hover:bg-slate-900" href="wordle.html"><i class = "h-full fa fa-fw fa-user-circle-o"></i> Wordle</a></li>
+<body class="font-mono">
+    <nav class="bg-[#0082e6] h-20 w-full top-0 fixed" id="navbar">
+        <input type="checkbox" class="hidden" id="check">
+        <label for="check" class="checkbtn mr-[40px] leading-[80px] text-[30px] text-white float-right cursor-pointer hidden"><i class="fas fa-bars"></i></label>
+        <label class="logo pt-0 px-[100px] font-bold text-white text-[35px] leading-[80px]">Dzuizz.com</label>
+        <ul class="mr-[20px] float-right">
+          <li class="mt-0 mx-[5px] leading-[80px] inline-block"><a class="text-white font-[17px] pt-[7px] px-[13px] rounded-[3px] capitalize hover:duration-500 hover:bg-[#1b9bff]" href="index.html"><i class = "h-full fa fa-fw fa-home"></i> Home</a></li>
+          <li class="mt-0 mx-[5px] leading-[80px] inline-block"><a class="text-white font-[17px] pt-[7px] px-[13px] rounded-[3px] capitalize hover:duration-500 bg-[#1b9bff]" href="#"><i class="fa fa-user-circle"></i> My Family</a></li>
         </ul>
     </nav>
-    <div class = "m-2 mt-16">
+    <div class = "m-2 mt-24">
         <button class="border-2 border-green-500 mx-2 rounded hover:bg-green-500 focus:outline-none focus:ring duration-75" type="button" name="My Father"><a href="ayah.html" class="mx-1">The Father (Ainun Najib)</a></button>
         <button class="border-2 border-sky-500   mx-2 rounded hover:bg-sky-500   focus:outline-none focus:ring duration-75" type="button" name="My 1st Brother"><a href="index.html" class="mx-1">The Eldest Brother (Dzuizz)</a></button>
         <button class="border-2 border-amber-500 mx-2 rounded hover:bg-amber-500 focus:outline-none focus:ring duration-75" type="button" name="My 1st Brother"><a href="dzinnun.html" class="mx-1">The Second Brother (Dzinnun)</a></button>
