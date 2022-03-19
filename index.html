@@ -12,20 +12,13 @@
         gtag('config', 'UA-154885375-1');
     </script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <style type="text/tailwindcss">
-        @layer utilities {
-            * {@apply p-0 m-0 no-underline list-none box-border;}
-            div ul li {
-                @apply list-disc;
-            }
-        }
-    </style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ahmad Dzuizz</title>
 </head>
 
@@ -35,8 +28,19 @@
         <label for="check" class="checkbtn mr-[40px] leading-[80px] text-[30px] text-white float-right cursor-pointer hidden"><i class="fas fa-bars"></i></label>
         <label class="logo pt-0 pl-5 pr-[100px] font-bold text-white text-[35px] leading-[80px]"><i class="fa-solid fa-shield-check"></i> Dzuizz.com</label>
         <ul class="mr-[20px] float-right">
-            <li class="mt-0 mx-[5px] leading-[80px] inline-block"><a class="text-white font-[17px] pt-[7px] px-[13px] rounded-[3px] capitalize hover:duration-500 bg-[#1b9bff]" href="#"><i class = "h-full fa fa-fw fa-home"></i> Home</a></li>
-            <li class="mt-0 mx-[5px] leading-[80px] inline-block"><a class="text-white font-[17px] pt-[7px] px-[13px] rounded-[3px] capitalize hover:duration-500 hover:bg-[#1b9bff]" href="family.html"><i class="fa fa-user-circle"></i> My Family</a></li>
+            <li class="mt-0 mx-[5px] leading-[80px] inline-block"><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 bg-[#1b9bff]" href="#"><i class = "h-full fa fa-fw fa-home"></i> Home</a></li>
+            
+            <li class="mt-0 mx-[5px] leading-[80px] inline-block">
+                <div class="relative inline-block dropdown">
+                    <button><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 hover:bg-[#1b9bff] dropbtn" href="family.html"><i class="fa fa-user-circle"></i> My Family</a></button>
+                    
+                    <div class="hidden absolute bg-[#0082e6] m-w-[160px] z-10 dropdown-content" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+                        <a class="pt-3 px-4 text-white no-underline block hover:bg-[#1b9bff]" href="ayah.html">My Father</a>
+                        <a class="pt-3 px-4 text-white no-underline block hover:bg-[#1b9bff]" href="dzinnun.html">My Younger Brother</a>
+                        <a class="pt-3 px-4 text-white no-underline block hover:bg-[#1b9bff]" href="aisyah.html">My Only Sister</a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
     
@@ -54,124 +58,124 @@
             <br>
             <b class = "my-2 text-2xl">My Achievements</b>
             <div> <!--2021-->
-                <h3 class = "text-red-500">2021</h3>
+                <h3 class = "font-bold text-lg text-red-500">2021</h3>
                 <ul class = "list-disc mx-10">
                     <li class = "m-2 z-0"> <!--DrCT-->
-                        <p>DrCT Global Finals (Doctor Of Computational Thinking) - <b class = "text-amber-400">GOLD</b> <em>1st Globally</em></p>
+                        <p><b>DrCT</b> Global Finals (Doctor Of Computational Thinking) - <b class = "text-amber-400">GOLD</b> <em>1st Globally</em></p>
                     </li>
                     <li class = "m-2 z-0"> <!--DrCT-->
-                        <p>DrCT (Doctor Of Computational Thinking) - <b class = "text-amber-400">GOLD</b> <em>1st in Singapore and 2nd Globally</em></p>
+                        <p><b>DrCT</b> (Doctor Of Computational Thinking) - <b class = "text-amber-400">GOLD</b> <em>1st in Singapore and 2nd Globally</em></p>
                     </li>
                     <li class = "m-2 z-0"> <!--IJMO-->
-                        <p>IJMO (International Junior Mathematical Olympiad) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>IJMO</b> (International Junior Mathematical Olympiad) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SASMO-->
-                        <p>SASMO (Singapore and Asian Schools Mathematical Olympiad) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>SASMO</b> (Singapore and Asian Schools Mathematical Olympiad) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SMKC-->
-                        <p>SMKC (Singapore Mathematical Kangaroo Contest) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>SMKC</b> (Singapore Mathematical Kangaroo Contest) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--NMOS-->
-                        <p>NMOS (National Mathematical Olympiad of Singapore) - <b class = "text-neutral-400">SILVER</b></p>
+                        <p><b>NMOS</b> (National Mathematical Olympiad of Singapore) - <b class = "text-neutral-400">SILVER</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--RIPMWC-->
-                        <p>RIPMWC (Raffles Instituition Primary Mathematics World Contest) - <b class = "text-neutral-400">50%</b></p>
+                        <p><b>RIPMWC</b> (Raffles Instituition Primary Mathematics World Contest) - <b class = "text-neutral-400">50%</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SMOPS-->
-                        <p>SMOPS (Singapore Mathematical Olympiad for Primary Schools) - <b class = "text-neutral-400">SILVER</b></p>
+                        <p><b>SMOPS</b> (Singapore Mathematical Olympiad for Primary Schools) - <b class = "text-neutral-400">SILVER</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--KUMON-->
-                        <p>Kumon ASHR (Advanced Student Honour Roll) Mathematics - <b>5 Years Ahead</b></p>
+                        <p><b>Kumon</b> ASHR (Advanced Student Honour Roll) Mathematics - <b>5 Years Ahead</b></p>
                     </li>
                 </ul>
             </div>
             <div> <!--2020-->
-                <h3 class = "text-red-500">2020</h3>
+                <h3 class = "font-bold text-lg text-red-500">2020</h3>
                 <ul class = "list-disc mx-10">
                     <li class = "m-2 z-0"> <!--SMKC-->
-                        <p>SMKC (Singapore Mathematics Kangaroo Contest) - <b class = "text-violet-800">Perfect Score</b></p>
+                        <p><b>SMKC</b> (Singapore Mathematics Kangaroo Contest) - <b class = "text-violet-800">Perfect Score</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--DOKA-->
-                        <p>DOKA (Depth Of Knowledge Assesment) - <b class = "text-amber-400">HIGH DISTINCTION</b></p>
+                        <p><b>DOKA</b> (Depth Of Knowledge Assesment) - <b class = "text-amber-400">HIGH DISTINCTION</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SASMO-->
-                        <p>SASMO (Singapore and Asian Schools Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>SASMO</b> (Singapore and Asian Schools Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SIMOC-->
-                        <p>SIMOC (Singapore International Mathematics Olympiad Challenge) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>SIMOC</b> (Singapore International Mathematics Olympiad Challenge) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--DrCT-->
-                        <p>DrCT (Doctor of Computational Thinking) - <b class = "text-neutral-400">SILVER</b></p>
+                        <p><b>DrCT</b> (Doctor of Computational Thinking) - <b class = "text-neutral-400">SILVER</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--AMC-->
-                        <p>AMC (Australian Mathematics Olympiad) - <b class = "text-neutral-400">DISTINCTION</b></p>
+                        <p><b>AMC</b> (Australian Mathematics Olympiad) - <b class = "text-neutral-400">DISTINCTION</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--AMO-->
-                        <p>AMO (American Mathematics Olympiad) - <b class = "text-neutral-400">SILVER</b></p>
+                        <p><b>AMO</b> (American Mathematics Olympiad) - <b class = "text-neutral-400">SILVER</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--VANDA GF-->
-                        <p>Vanda Global Finals (A Science Olympiad) - <b class = "text-red-900">BRONZE</b></p>
+                        <p><b>Vanda</b> Global Finals (A Science Olympiad) - <b class = "text-red-900">BRONZE</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--VTMO-->
-                        <p>VTMO (Vietnam Titan Mathematical Olympiad) - <b class = "text-red-900">BRONZE</b></p>
+                        <p><b>VTMO</b> (Vietnam Titan Mathematical Olympiad) - <b class = "text-red-900">BRONZE</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--KUMON-->
-                        <p>Kumon ASHR (Advanced Student Honour Roll) English - <b>3 Years Ahead</b></p>
+                        <p><b>Kumon ASHR</b> (Advanced Student Honour Roll) English - <b>3 Years Ahead</b></p>
                     </li>
                 </ul>
             </div>
             <div> <!--2019-->
-                <h3 class = "text-red-500">2019</h3>
+                <h3 class = "font-bold text-lg text-red-500">2019</h3>
                 <ul class = "list-disc mx-10">
                     <li class = "m-2 z-0"> <!--YALA-->
-                        <p>YALA Scholarship (Young Achievers Learning Academy) - <b class = "text-violet-800">Platinum</b></p>
+                        <p><b>YALA Scholarship</b> (Young Achievers Learning Academy) - <b class = "text-violet-800">Platinum</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SEF-->
-                        <p>SEF (Scholastic Environmental Fund) Oral Competition on Environmental Solutions - <b class = "text-amber-400">GOLD</b> <em>1st</em></p>
+                        <p><b>SEF</b> (Scholastic Environmental Fund) Oral Competition on Environmental Solutions - <b class = "text-amber-400">GOLD</b> <em>1st</em></p>
                     </li>
                     <li class = "m-2 z-0"> <!--BEBRAS-->
-                        <p>BEBRAS (Lithuanian word for "beaver") Computational Thinking - <b class = "text-amber-400">GOLD</b><em> 2nd in Singapore</em></p>
+                        <p><b>BEBRAS</b> (Lithuanian word for "beaver") Computational Thinking - <b class = "text-amber-400">GOLD</b><em> 2nd in Singapore</em></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SASMO-->
-                        <p>SASMO (Singapore and Asian Schools Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>SASMO</b> (Singapore and Asian Schools Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SIMOC-->
-                        <p>SIMOC (Singapore International Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>SIMOC</b> (Singapore International Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SMKC-->
-                        <p>SMKC (Singapore Mathematics Kangaroo Contest) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>SMKC</b> (Singapore Mathematics Kangaroo Contest) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--AMO-->
-                        <p>AMO (American Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>AMO</b> (American Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--AMC-->
-                        <p>AMC (Australian Mathematics Contest) - <b class = "text-neutral-400">DISTINCTION</b></p>
+                        <p><b>AMC</b> (Australian Mathematics Contest) - <b class = "text-neutral-400">DISTINCTION</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--ICAS SCIENCE-->
-                        <p>ICAS Science (A Science Contest) - <b class = "text-neutral-400">DISTINCTION</b></p>
+                        <p><b>ICAS</b> Science (A Science Contest) - <b class = "text-neutral-400">DISTINCTION</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--InfoTech-->
-                        <p>iOS App Development with Swift Essential (InfoTech) - <b>Accomplishment</b></p>
+                        <p><b>iOS App Development with Swift Essential</b> (InfoTech) - <b>Accomplishment</b></p>
                     </li>
                 </ul>
             </div>
             <div> <!--2018-->
-                <h3 class = "text-red-500">2018</h3>
+                <h3 class = "font-bold text-lg text-red-500">2018</h3>
                 <ul class = "list-disc mx-10">
                     <li class = "m-2 z-0"> <!--SASMO-->
-                        <p>SASMO (Singapore and Asian Schools Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>SASMO</b> (Singapore and Asian Schools Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SMKC-->
-                        <p>SMKC (Singapore Mathematics Kangaroo Contest) - <b class = "text-amber-400">GOLD</b></p>
+                        <p><b>SMKC</b> (Singapore Mathematics Kangaroo Contest) - <b class = "text-amber-400">GOLD</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--AMO-->
-                        <p>AMO (American Mathematics Olympiad) - <b class = "text-neutral-400">SILVER</b></p>
+                        <p><b>AMO</b> (American Mathematics Olympiad) - <b class = "text-neutral-400">SILVER</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SIMOC-->
-                        <p>SIMOC (Singapore International Mathematics Olympiad Challenge) - <b class = "text-neutral-400">SILVER</b></p>
+                        <p><b>SIMOC</b> (Singapore International Mathematics Olympiad Challenge) - <b class = "text-neutral-400">SILVER</b></p>
                     </li>
                     <li class = "m-2 z-0"> <!--SAA-->
-                        <p>Speech Academy Asia (10 text-red-500s Series of Public Speaking) - <b>Completion of Level 1</b></p>
+                        <p><b>Speech Academy Asia</b> (10 text-red-500s Series of Public Speaking) - <b>Completion of Level 1</b></p>
                     </li>
                 </ul>
             </div>

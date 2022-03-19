@@ -10,6 +10,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.dropdown-content a:hover {background-color: #1b9bff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #1b9bff;}
+
 *{
   padding: 0;
   margin: 0;
@@ -48,9 +54,8 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,a:hover{
-  background: #1b9bff;
-  transition: .5s;
+.dropbtn{
+  border: none;
 }
 .checkbtn{
   font-size: 30px;
