@@ -11,49 +11,50 @@
         gtag('config', 'UA-154885375-1');
     </script>
 
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ahmad Dzuizz</title>
 </head>
 
-<body class="font-mono flex flex-wrap">
-  	<nav class="bg-[#0082e6] h-20 w-full top-0 fixed" id="navbar">
-		<input type="checkbox" class="hidden" id="check">
-		<label for="check" class="checkbtn mr-[40px] leading-[80px] text-[30px] text-white float-right cursor-pointer hidden"><i class="fas fa-bars"></i></label>
-		<label class="logo pt-0 pl-5 pr-[100px] font-bold text-white text-[35px] leading-[80px]"><i class="fa-solid fa-shield-check"></i> Dzuizz.com</label>
-		<ul class="mr-[20px] float-right">
-			<li class="mt-0 mx-[5px] leading-[80px] inline-block"><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 hover:bg-[#1b9bff] dropbtn" href="index.html"><i class = "h-full fa fa-fw fa-home"></i> Home</a></li>
-			
-			<li class="mt-0 mx-[5px] leading-[80px] inline-block">
-				<div class="relative inline-block dropdown">
-					<button><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 hover:bg-[#1b9bff] dropbtn" href="family.html"><i class="fa fa-user-circle"></i> My Family</a></button>
-					
-					<div class="hidden absolute bg-[#0082e6] m-w-[160px] z-10 dropdown-content" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
-						<a class="pt-5 px-4 text-white text-base no-underline block hover:bg-[#1b9bff]" href="ayah.html">My Father</a>
-						<a class="pt-5 px-4 text-white text-base no-underline block hover:bg-[#1b9bff]" href="dzinnun.html">My Younger Brother</a>
-						<a class="pt-5 px-4 text-white text-base no-underline block hover:bg-[#1b9bff]" href="aisyah.html">My Only Sister</a>
-					</div>
+<body class="m-h-[100vh] font-mono flex flex-wrap justify-self-center items-center bg-gradient-to-r from-slate-600 to-zinc-400">
+	<div class="left-menu">
+		<div class="py-[30px] px-[10px] w-[200px] text-center text-white font-[20px] logo"><i class="font-[100px] text-[#21CCFC] fa fa-align-justify"></i>
+			<div>Games' Section</div>
+		</div>
+		<div class="text-white w-full accordion">
+			<div class="section">
+				<input type="radio" name="accordion-1" id="section-1" checked="checked"/>
+				<label for="section-1"><span>Home</span></label>
+				<div class="content">
+					<ul class="w-full p-0 m-0 list-none">
+						<li class="p-[10px] hover:cursor-pointer"><i class="w-[15px] mr-[15px] text-[13px] fa fa-home"></i><a href="index.html">Main Page</a></li>
+						<li class="p-[10px] hover:cursor-pointer"><i class="w-[15px] mr-[15px] text-[13px] fa fa-user"></i><a href="family.html">My Family</a></li>
+					</ul>
 				</div>
-			</li>
-
-			<li class="mt-0 mx-[5px] leading-[80px] inline-block">
-				<div class="relative inline-block dropdown">
-					<button><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 bg-[#1b9bff] dropbtn" href="#"><i class="fa fa-gamepad"></i> Games</a></button>
-					
-					<div class="hidden absolute bg-[#0082e6] m-w-[160px] z-10 dropdown-content">
-						<a class="pt-5 px-4 text-white text-base no-underline block hover:bg-[#1b9bff]" href="#"> Rock Paper Scissors</a>
-					</div>
+			</div>
+			<div class="section">
+				<input type="radio" name="accordion-1" id="section-2" value="toggle"/>
+				<label for="section-2"><span>Available Games</span></label>
+				<div class="content">
+					<ul class="w-full p-0 m-0 list-none">
+						<li class="p-[10px] hover:cursor-pointer"><i class="w-[15px] mr-[15px] text-[13px] fa fa-hand-scissors"></i><span>Rock Paper Scissors</span></li>
+						<li class="p-[10px] hover:cursor-pointer"><i class="w-[15px] mr-[15px] text-[13px] fa fa-align-center"></i><span>Tic Tac Toe</span></li>
+						<li class="p-[10px] hover:cursor-pointer"><i class="w-[15px] mr-[15px] text-[13px] fa fa-sitemap"></i><span>Visitation</span></li>
+					</ul>
 				</div>
-			</li>
-		</ul>
-	</nav>
+			</div>
+		</div>
+	</div>
 
 	<main class="w-full mt-32">
+
 		<div class="mx-auto text-center">
 			<h1 class="text-3xl">Rock Paper Scissors</h1>
 			<button type="button" onclick="round()" class="m-4 p-2 bg-sky-500 rounded" id="round-start">Start a round</button>

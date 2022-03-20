@@ -16,7 +16,7 @@ function round() {
 	document.getElementById("computer-choice").innerHTML = choices[randomGuess - 1];
 
 	if (parseInt(userGuess) === randomGuess) {
-		document.getElementById("result").innerHTML = "<p><br>This is a match.</p>";
+		document.getElementById("result").innerHTML = "<p><br>This is a draw.</p>";
 	} else if (parseInt(userGuess) === 1 && randomGuess === 2) {
 		document.getElementById("result").innerHTML = "<p><br>You have won, scissors will cut paper up.</p>";
 	} else if (parseInt(userGuess) === 2 && randomGuess === 1) {
