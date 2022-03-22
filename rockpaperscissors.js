@@ -12,9 +12,6 @@ function round() {
 	randomGuess = Math.floor(Math.random() * 3) + 1;
 	userGuess = prompt("To play this game, enter your choice: Scissors(1), Paper(2) or Stone(3).");
 
-	document.getElementById("user-choice").innerHTML = choices[userGuess - 1];
-	document.getElementById("computer-choice").innerHTML = choices[randomGuess - 1];
-
 	if (parseInt(userGuess) === randomGuess) {
 		document.getElementById("result").innerHTML = "<p><br>This is a draw.</p>";
 	} else if (parseInt(userGuess) === 1 && randomGuess === 2) {
@@ -32,4 +29,7 @@ function round() {
 	} else if (userGuess === "" && userGuess === null) {
 		document.getElementById("result").innerHTML = "<p><br>You have not entered your choice.</p>";
 	}
+
+	document.getElementById("user-choice").innerHTML = choices[userGuess - 1];
+	document.getElementById("computer-choice").innerHTML = choices[randomGuess - 1];
 }
