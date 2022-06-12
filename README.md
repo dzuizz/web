@@ -1,2 +1,2 @@
-# web for my family's profile
-# my first attempt in making a web
+# My Personal Website
+## Currently consisting of my CV, some games, my family, and a brief overview of most of the algorithms I know.
