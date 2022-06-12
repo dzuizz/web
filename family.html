@@ -1,6 +1,4 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-
+<!DOCTYPE html>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
@@ -12,57 +10,99 @@
         gtag('config', 'UA-154885375-1');
     </script>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--- tailwindcss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css" integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc=" crossorigin="anonymous" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/cb29bc5607.js" crossorigin="anonymous"></script>
+    
+    <!-- Pyp5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Family</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="src/css/styles.css" />
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+
+    
+    
+
+    
+    <title>Dzuizz.com</title>
+    
 </head>
 
-<body class="font-mono">
-    <nav class="bg-[#0082e6] h-20 w-full top-0 fixed" id="navbar">
-        <input type="checkbox" class="hidden" id="check">
-        <label for="check" class="checkbtn mr-[40px] leading-[80px] text-[30px] text-white float-right cursor-pointer hidden"><i class="fas fa-bars"></i></label>
-        <label class="logo pt-0 pl-5 pr-[100px] font-bold text-white text-[35px] leading-[80px]"><i class="fa-solid fa-shield-check"></i> Dzuizz.com</label>
-        <ul class="mr-[20px] float-right">
-            <li class="mt-0 mx-[5px] leading-[80px] inline-block"><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 hover:bg-[#1b9bff] dropbtn" href="index.html"><i class = "h-full fa fa-fw fa-home"></i> Home</a></li>
-            
-            <li class="mt-0 mx-[5px] leading-[80px] inline-block">
-                <div class="relative inline-block dropdown">
-                    <button><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 bg-[#1b9bff] dropbtn" href="family.html"><i class="fa fa-user-circle"></i> The Family</a></button>
-                    
-                    <div class="hidden absolute bg-[#0082e6] m-w-[160px] z-10 dropdown-content" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
-                        <a class="pt-5 px-4 text-white text-base no-underline block hover:bg-[#1b9bff]" href="ayah.html">My Father</a>
-                        <a class="pt-5 px-4 text-white text-base no-underline block hover:bg-[#1b9bff]" href="dzinnun.html">My Younger Brother</a>
-                        <a class="pt-5 px-4 text-white text-base no-underline block hover:bg-[#1b9bff]" href="aisyah.html">My Only Sister</a>
-                    </div>
-                </div>
-            </li>
+<body class="font-mono flex flex-wrap fullscreen m-0 bg-primary z-10">
+    
 
-            <li class="mt-0 mx-[5px] leading-[80px] inline-block">
-				<div class="relative inline-block dropdown">
-					<button><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 hover:bg-[#1b9bff] dropbtn" href="games.html"><i class="fa fa-gamepad"></i> Games</a></button>
-					
-					<div class="hidden absolute bg-[#0082e6] m-w-[160px] z-10 dropdown-content">
-						<a class="pt-5 px-4 text-white text-base no-underline block hover:bg-[#1b9bff]" href="games.html"> Rock Paper Scissors</a>
-					</div>
-				</div>
-			</li>
-        </ul>
+
+    <nav class="sticky top-0 flex items-center bg-gray-800 p-3 flex-wrap w-full">
+        <a href="/" class="p-2 mr-4 inline-flex items-center"> <!-- Logo -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white h-8 w-8 mr-2">
+                <path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"/>
+            </svg>
+            <span class="text-xl text-white font-bold uppercase tracking-wide">
+                Dzuizz.com
+            </span>
+        </a>
+        </button>
+        <div class="w-full sm:inline-flex sm:flex-grow sm:w-auto">
+            <div class="sm:inline-flex sm:flex-row sm:ml-auto sm:w-auto w-full sm:items-center items-start flex sm:h-auto">
+                <a href="/index.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Home</span>
+                </a>
+                <a href="/games.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Games</span>
+                </a>
+                <a href="/family.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>My Family</span>
+                </a>
+                <a href="/algorithms.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Algorithms</span>
+                </a>
+            </div>
+        </div>
     </nav>
-    <div class = "m-2 mt-24">
-        <button class="border-2 border-green-500 mx-2 rounded hover:bg-green-500 focus:outline-none focus:ring duration-75" type="button" name="My Father"><a href="ayah.html" class="mx-1">The Father (Ainun Najib)</a></button>
-        <button class="border-2 border-sky-500   mx-2 rounded hover:bg-sky-500   focus:outline-none focus:ring duration-75" type="button" name="My 1st Brother"><a href="index.html" class="mx-1">The Eldest Brother (Dzuizz)</a></button>
-        <button class="border-2 border-amber-500 mx-2 rounded hover:bg-amber-500 focus:outline-none focus:ring duration-75" type="button" name="My 1st Brother"><a href="dzinnun.html" class="mx-1">The Second Brother (Dzinnun)</a></button>
-        <button class="border-2 border-red-400   mx-2 rounded hover:bg-red-400   focus:outline-none focus:ring duration-75" type="button" name="My only Sister"><a href="aisyah.html" class="mx-1">The only Sister (Aisyah)</a></button>
-    </div>
+    
+
+<div class="m-2">
+    <button class="border-2 border-green-500  mx-2 rounded hover:bg-green-500  focus:outline-none focus:ring duration-75" type="button" name="My Father"      ><a class="mx-1" href="/family/ainunnajib.html">The Father (Ainun Najib)</a></button>
+    <button class="border-2 border-indigo-500 mx-2 rounded hover:bg-indigo-500 focus:outline-none focus:ring duration-75" type="button" name="My 1st Brother" ><a class="mx-1" href="index.html">The Eldest Brother (Dzuizz)</a></button>
+    <button class="border-2 border-amber-500  mx-2 rounded hover:bg-amber-500  focus:outline-none focus:ring duration-75" type="button" name="My 1st Brother" ><a class="mx-1" href="/family/dzinnun.html">The Second Brother (Dzinnun)</a></button>
+    <button class="border-2 border-red-400    mx-2 rounded hover:bg-red-400    focus:outline-none focus:ring duration-75" type="button" name="My only Sister" ><a class="mx-1" href="/family/aisyah.html">The only Sister (Aisyah)</a></button>
+    <button class="border-2 border-blue-400   mx-2 rounded hover:bg-blue-400   focus:outline-none focus:ring duration-75" type="button" name="My baby Brother"><a class="mx-1" href="/family/zarruq.html">The Latest Baby (Zarruq)</a></button>
+</div>
+
+
+<main class="fullscreen h-screen">
     <div class="flex flex-nonwrap">
-        <div class="m-2 mt-4"><img src="familyImage.jpg"></div>
-        <p class="place-self-center">
-            <b class="text-7xl">My Family</b><br>The family with all types of personalities and behaviours.
-        </p>
+        <div class="m-2 mt-4"><img src="src/familyImage.jpg"></div>
+        <article class="font-comfortaa place-self-center">
+            <h1 class="text-7xl">My Family</h1>
+            <p class="mt-2">
+                The family with all types of personalities and behaviours.<br>
+                Currently consisting of 6 members of which are 3 brothers, a sister, a mother and a father.<br>
+            </p>
+        </article>
     </div>
+</main>
+
+    <main>
+        
+    </main>
+
+    <!--Bootstrap JS & Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>

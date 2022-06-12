@@ -1,0 +1,28 @@
+{
+  "name": "dzuizz.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i tailwind.css -o src/css/styles.css --watch",
+    "prod": "npx tailwindcss -i tailwind.css -o src/css/styles.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzuizz/web-flask.git"
+  },
+  "keywords": [],
+  "author": "Ahmad Dzuizz Annajib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzuizz/web-flask/issues"
+  },
+  "homepage": "https://github.com/dzuizz/web-flask#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "pupeteer": "^0.0.1",
+    "puppeteer": "^14.1.1"
+  }
+}

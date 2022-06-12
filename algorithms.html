@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-154885375-1');
+    </script>
+
+    <!--- tailwindcss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css" integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc=" crossorigin="anonymous" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/cb29bc5607.js" crossorigin="anonymous"></script>
+    
+    <!-- Pyp5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="src/css/styles.css" />
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+
+    
+
+
+    
+    <title>Dzuizz.com</title>
+    
+</head>
+
+<body class="font-mono flex flex-wrap fullscreen m-0 bg-primary z-10">
+    
+
+    <nav class="sticky top-0 flex items-center bg-gray-800 p-3 flex-wrap w-full">
+        <a href="/" class="p-2 mr-4 inline-flex items-center"> <!-- Logo -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white h-8 w-8 mr-2">
+                <path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"/>
+            </svg>
+            <span class="text-xl text-white font-bold uppercase tracking-wide">
+                Dzuizz.com
+            </span>
+        </a>
+        </button>
+        <div class="w-full sm:inline-flex sm:flex-grow sm:w-auto">
+            <div class="sm:inline-flex sm:flex-row sm:ml-auto sm:w-auto w-full sm:items-center items-start flex sm:h-auto">
+                <a href="/index.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Home</span>
+                </a>
+                <a href="/games.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Games</span>
+                </a>
+                <a href="/family.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>My Family</span>
+                </a>
+                <a href="/algorithms.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Algorithms</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+
+<main class="fullscreen">
+    <div class="flex flex-wrap">
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Bellman Ford Algorithm"><a href="#bellman-ford-algorithm" class="mx-1">Bellman Ford Algorithm</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Breadth First Search"><a href="#breadth-first-search" class="mx-1">Breadth First Search</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Depth First Search"><a href="#depth-first-search" class="mx-1">Depth First Search</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Binary Search"><a href="#binary-search" class="mx-1">Binary Search</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Bubble Sort"><a href="#bubble-sort" class="mx-1">Bubble Sort</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Disjoint Union Set"><a href="#disjoint-union-set" class="mx-1">Disjoint Union Set</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Dijkstra"><a href="#dijkstra" class="mx-1">Dijkstra</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Dynamic Programming"><a href="#dynamic-programming" class="mx-1">Dynamic Programming</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Floyd Warshall Algorithm"><a href="#floyd-warshall-algorithm" class="mx-1">Floyd Warshall Algorithm</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Insertion Sort"><a href="#insertion-sort" class="mx-1">Insertion Sort</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Minimum Spanning Tree"><a href="#minimum-spanning-tree" class="mx-1">Minimum Spanning Tree</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Segment Tree"><a href="#segment-tree" class="mx-1">Segment Tree</a></button>
+        
+    </div>
+    
+    <div class="list-none m-5 font-mono"> <!-- Binary Search -->
+        <h1 class="text-3xl font-medium uppercase" id="binary-search">Binary Search</h1>
+        <p class="flex-wrap text-base m-4">
+            Binary search is a search algorithm that finds the position of a target value within a sorted array.<br>
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+            <p class="flex-wrap ml-2">Given a sorted array of size <b>N</b> and a target value <b>X</b>, find the location of <b>X</b> in the array.<br></p>
+            <pre class="m-2 mt-0 text-base">
+Input:
+  N X
+  A<sub>1</sub> A<sub>2</sub> ... A<sub>N</sub>
+</pre>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+#include&#60;iostream&#62;
+using namespace std;
+
+int main() {
+    int n, x; cin >> n >> x;
+    int a[n];
+    for(int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+
+    int lf = 0, rg = n-1;
+    while (lf < rg) {
+        int mid = (lf + rg) / 2;
+        if (a[mid] >= x) {
+            rg = mid;
+        } else {
+            lf = mid + 1;
+        }
+    }
+    cout << lf << endl; <span class="text-green-600">// or rg</span>
+}
+            </code>
+        </pre>
+    </div>
+
+    <div class="list-none m-5 font-mono"> <!-- DFS -->
+        <h1 class="text-3xl font-medium uppercase" id="depth-first-search">Depth First Search</h1>
+        <p class="text-base m-4">
+            Depth First Search is a graph traversal algorithm that finds the shortest path from one point to another in an unweighted graph.<br>
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+            <p class="flex-wrap ml-2">Given a graph of <b>N</b> nodes connected by <b>M</b> bidirectional edges which connect nodes <b>P<sub class="">i</sub></b> and <b>Q<sub class="">i</sub></b>, find the shortest path from node <b>S</b> to node <b>E</b>.</p>
+            <pre class="m-2 mt-0 text-base">
+Input:
+  N M
+  S E
+
+  P<sub>1</sub> Q<sub>1</sub>
+  P<sub>2</sub> Q<sub>2</sub>
+  ...
+  P<sub>M</sub> Q<sub>M</sub>
+</pre>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+#include&#60;iostream&#62;
+#include&#60;vector&#62;
+using namespace std;
+
+vector&#60;vector&#60;int&#62; &#62; adj;
+bool visited[n];
+const int INF = 1e9;
+int S, E;
+
+int dfs(int cur) {
+    visited[cur] = true;
+    if (cur == E) {
+        return 0;
+    }
+    int res = INF;
+    for (int i = 0; i < adj[cur].size(); i++) {
+        int next = adj[cur][i];
+        if (!visited[next]) {
+            int dis = dfs(next);
+            if (dis != -1) {
+                res = min(res, dis + 1);
+            }
+        }
+    }
+    if (res == INF) return -1;
+    return res;
+}
+
+int main() {
+    int n, m; cin >> n >> m;
+    visited = vector&#60;int&#62;(n);
+
+    for (int i = 0; i < m; i++) {
+        int p, q; cin >> p >> q;
+        adj[p].push_back(q);
+        adj[q].push_back(p);
+    }
+
+    cin >> S >> E;
+    cout << dfs(S) << endl;
+}
+            </code>
+        </pre>
+    </div>
+    
+    <div class="list-none m-5 font-mono"> <!-- BFS -->
+        <h1 class="text-3xl font-medium uppercase" id="breadth-first-search">Breadth First Search</h1>
+        <p class="text-base m-4">
+            Breadth First Search, just like Depth First Search, is a graph traversal algorithm that finds the shortest path from one point to another in an unweighted graph.
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+            <p class="flex-wrap ml-2">Given a graph of <b>N</b> nodes connected by <b>M</b> bidirectional edges which connect nodes <b>P<sub class="">i</sub></b> and <b>Q<sub class="">i</sub></b>, find the shortest path from node <b>S</b> to node <b>E</b>.</p>
+            <pre class="m-2 mt-0 text-base">
+Input:
+  N M
+  S E
+
+  P<sub>1</sub> Q<sub>1</sub>
+  P<sub>2</sub> Q<sub>2</sub>
+  ...
+  P<sub>M</sub> Q<sub>M</sub>
+</pre>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+#include&#60;iostream&#62;
+#include&#60;queue&#62;
+using namespace std;
+typedef pair&#60;int, int&#62; ii;
+
+#define fi node
+#define se dist
+
+int main() {
+    int n, m; cin >> n >> m;
+    int s, e; cin >> s >> e;
+
+    vector&#60;vector&#60;int&#62; &#62; adj;
+    vector&#60;bool&#62; visited;
+
+    for (int i = 0; i < n; i++) {
+        int p, q; cin >> p >> q;
+        adj[p].push_back(q);
+        adj[q].push_back(p);
+    }
+
+    queue&#60;int&#62; q;
+    q.push_back(ii(s, 0));
+    visited[s] = 1;
+    while(!q.empty()) {
+        ii cur = q.top(); q.pop();
+        if (cur.node == e) {
+            cout << cur.dist << endl;
+            return 0;
+        }
+        for (int i = 0; i < adj[cur.node].size(); i++) {
+            int next = adj[cur.node][i];
+            if (!visited[next]) {
+                q.push_back(ii(next, cur.dist + 1));
+                visited[next] = 1;
+            }
+        }
+    }
+}
+            </code>
+        </pre>
+    </div>
+    
+    <div class="list-none m-5 font-mono"> <!-- Dijkstra -->
+        <h1 class="text-3xl font-medium uppercase" id="dijkstra">Dijkstra</h1>
+        <p class="text-base m-4">
+            Dijkstra
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+            <p class="flex-wrap ml-2">Given a weighted graph of <b>N</b> nodes connected by <b>E</b> bidirectional edges with <b>W<sub class="">i</sub></b> which connect nodes <b>P<sub class="">i</sub></b> and <b>Q<sub class="">i</sub></b>, find the shortest path from node <b>S</b> to node <b>E</b>.</p>
+            <pre class="m-2 mt-0 text-base">
+Input:
+  N E
+  P<sub>1</sub> Q<sub>1</sub> W<sub>1</sub>
+  P<sub>2</sub> Q<sub>2</sub> W<sub>2</sub>
+  ...
+  P<sub>M</sub> Q<sub>M</sub> W<sub>M</sub>
+</pre>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+#include&#60;iostream&#62;
+#include&#60;vector&#62;
+#include&#60;queue&#62;
+using namespace std;
+typedef pair&#60;int, int&#62; ii;
+
+#define fi node
+#define se dist
+
+vector&#60;vector&#60;ii&#62;&#62; adj;
+const int INF = 1e9;
+
+int main() {
+    int n, e; cin >> n >> e;
+
+    vector&#60;int&#62; distV(n);
+
+    for (int i = 0; i < n; i++) distV[i] = INF;
+    for (int i = 0; i < e; i++) {
+        int p, q, w; cin >> p >> q >> w;
+        adj[p].push_back(ii(q, w));
+        adj[q].push_back(ii(p, w));
+    }
+
+    priority_queue&#60;ii&#62; q;
+    q.push_back(ii(-s, 0));
+
+    while(!q.empty()) {
+        ii cur = q.top(); q.pop();
+        int curNode = -cur.node;
+        int curDist = cur.dist;
+        if (curNode == e) {
+            cout << curDist << endl;
+            return 0;
+        }
+        for (int i = 0; i < adj[curNode].size(); i++) {
+            int next = adj[curNode][i].node;
+            int w = adj[curNode][i].dist;
+            if (curDist + w < dist[next]) {
+                dist[next] = cur.dist + w;
+                q.push_back(ii(-next, dist[next]));
+            }
+        }
+    }
+}
+</code>
+        </pre>
+    </div>
+
+    <div class="list-none m-5 font-mono"> <!-- Floyd Warshall -->
+        <h1 class="text-3xl font-medium uppercase" id="floyd-warshall-algorithm">Floyd Warshall Algorithm</h1>
+        <p class="text-base m-4">
+            Floyd Warshall Algorithm
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+            <p class="flex-wrap ml-2">Given an unweighted graph of <b>N</b> nodes and <b>E</b> bidirectional edges connecting nodes <b>A<sub>i</sub></b> and <b>B<sub>i</sub></b>, find the shortest path between two points in each given query of the <b>Q</b> queries.</p>
+            <pre class="m-2 mt-0 text-base">
+Input:
+  N E
+  
+  A<sub>1</sub> B<sub>1</sub>
+  A<sub>2</sub> B<sub>2</sub>
+  ...
+  A<sub>e</sub> B<sub>e</sub>
+</pre>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+#include&#60;iostream&#62;
+#include&#60;vector&#62;
+using namespace std;
+
+int dis[]
+
+int main() {
+    int n, e; cin >> n >> e;
+    
+}
+            </code>
+        </pre>
+    </div>
+
+    <div class="list-none m-5 font-mono"> <!-- Bellman Ford -->
+        <h1 class="text-3xl font-medium uppercase" id="bellman-ford-algorithm">Bellman Ford Algorithm</h1>
+        <p class="text-base m-4">
+            The Bellman Ford Algorithm is an algorithm that finds if there is a negative cycle in a graph.
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+    #include&#60;iostream&#62;
+    using namespace std;
+
+    int main() {
+
+    }
+            </code>
+        </pre>
+    </div>
+
+    <div class="list-none m-5 font-mono"> <!-- Dynamic Programming -->
+        <h1 class="text-3xl font-medium uppercase" id="dynamic-programming">Dynamic Programming</h1>
+        <p class="text-base m-4">
+            Dynamic Programming is a method of solving a problem by breaking it down into subproblems and using the results of those subproblems to solve the original problem.
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+    #include&#60;iostream&#62;
+    using namespace std;
+
+    int main() {
+        
+    }
+            </code>
+        </pre>
+    </div>
+
+    <div class="list-none m-5 font-mono"> <!-- Segment Tree -->
+        <h1 class="text-3xl font-medium uppercase" id="segment-tree">Segment Tree</h1>
+        <p class="text-base m-4">
+            Segment Tree is a data structure that answers queries of a range efficiently, while being able to be modified.
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+            <p class="flex-wrap ml-2">
+                Given the array <b>A</b> with <b>N</b> elements find the sum of all elements from <b>A<sub class=""><sub class="">i</sub></sub></b> to <b>A<sub class="">j</sub></b>.<br>
+                Each query consists of 3 integers.<br>
+                if the first integer is 1, the query will continue with <b>i</b> and <b>j</b>. Print the sum of all elements from A<sub>i</sub> to A<sub>j</sub>.<br>
+                if the first integer is 2, the query will continue with <b>U</b> and <b>X</b>. Replace the element at <b>A<sub class="">U</sub></b> with <b>X</b>
+            </p>
+            <pre class="m-2 mt-0 text-base">
+Input:
+  N Q
+  A<sub>1</sub> A<sub>2</sub> ... A<sub>N</sub>
+
+  Queries of either type at an arbitrary order.
+  1 i j or
+  2 U X
+</pre>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+#include&#60;iostream&#62;
+#include&#60;vector&#62;
+using namespace std;
+
+vector&#60;int&#62; segTree, a;
+
+void build(int idx, int l, int r) {
+    if (l == r) {
+        return segTree[idx] = a[l]; <span class="text-green-600">// or a[r]</span>
+    }
+    int mid = (l + r) / 2;
+
+    build(2 * idx, l, mid);
+    build(2 * idx + 1, mid + 1, r);
+
+    segTree[idx] = segTree[2 * idx] + segTree[2 * idx + 1];
+}
+
+void update(int idx, int l, int r, int u, int x) {
+    if (l == r) {
+        segTree[idx] = x;
+        return;
+    }
+    int mid = (l + r) / 2;
+
+    if (x <= mid) update(2 * idx, l, mid, u, x);
+    else update(2 * idx + 1, mid + 1, r, u, x);
+
+    segTree[idx] = segTree[2 * idx] + segTree[2 * idx + 1];
+}
+
+int query(int idx, int l, int r, int x, int y) {
+    if (l <= x && y <= r) {
+        return segTree[idx];
+    } else if (y <= l || x >= r) {
+        return 0;
+    }
+    int mid = (l + r) / 2;
+
+    return query(2 * idx, l, mid, x, y) + query(2 * idx + 1, mid + 1, r, x, y);
+}
+
+int main() {
+    int n, q; cin >> n >> q;
+
+    for (int i = 0; i < n; i++) cin >> a[i];
+
+    segTree = vector&#60;int&#62;(n);
+
+    build(1, 0, n-1);
+    
+    for (int i = 0; i < q; i++) {
+        int type, x, y; cin >> type >> x >> y;
+
+        if (type == 1) {
+            cout &#60;&#60; query(1, 0, n-1, x, y);
+        } else {
+            update(1, 0, n-1, x, y);
+        }
+    }
+}
+            </code>
+        </pre>
+    </div>
+
+    <div class="list-none m-5 font-mono"> <!-- Minimum Spanning Tree -->
+        <h1 class="text-3xl font-medium uppercase" id="minimum-spanning-tree">Minimum Spanning Tree</h1>
+        <p class="text-base m-4">
+            Minimum Spanning Tree is a data structure that finds the least sum of weights of edges of a weighted graph in order to achieve a goal.
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+    #include&#60;iostream&#62;
+    using namespace std;
+
+    int main() {
+        
+    }
+            </code>
+        </pre>
+    </div>
+
+    <div class="list-none m-5 font-mono"> <!-- Disjoint Set Union -->
+        <h1 class="text-3xl font-medium uppercase" id="disjoint-set-union">Disjoint Set Union</h1>
+        <p class="text-base m-4">
+            Disjoint Set Union
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+            <pre class="m-2 text-base">
+There are <b>n</b> kingdom. After every fight between two kingdom, the winner will take the defeated kingdom's resources
+In each fight, the kingdom with more resources will win.
+Given the number of kingdoms, their initial resources and the fights,
+Find the kingdom with the most resources at the end.
+Input:
+  N M
+  A<sub>N</sub> A<sub>N-1</sub> A<sub>N-2</sub> ... A<sub>1</sub>
+  P<sub>1</sub> Q<sub>1</sub>
+  P<sub>2</sub> Q<sub>2</sub>
+  ...
+  P<sub>N</sub> Q<sub>N</sub>
+            </pre>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 border-0 font-mono font-[100%] align-baseline hljs xml">
+#include&#60;iostream&#62;
+#include&#60;vector&#62;
+using namespace std;
+typedef pair&#60;int, int&#62; ii;
+
+#define fi first
+#define se second
+
+vector&#60;int&#62; dsu; <span class="text-green-600">// resources, the kingdom it is under</span>
+
+int find(int n) {
+    if (dsu[n] == n) return n;
+    return dsu[n] = find(dsu[n]);
+}
+
+void merge(int x, int y) {
+    x = find(x); y = find(y);
+    if (x == y) return;
+    if (dsu[x].fi < dsu[y].fi) {
+        swap(x, y);
+    }
+    dsu[x].fi += dsu[y].fi;
+    dsu[y].se = x;
+}
+
+int main() {
+    int n, m; cin >> n >> m;
+    dsu.resize(n);
+
+    for (int i = 0; i < n; i++) {
+        cin >> dsu[i].fi;
+        dsu[i].se = i;
+    }
+
+    for (int i = 0; i < m; i++) {
+        int a, b; cin >> a >> b;
+        merge(a, b);
+    }
+}
+            </code>
+        </pre>
+    </div>
+
+    <div class="list-none m-5 font-mono"> <!-- Insertion Sort -->
+        <h1 class="text-3xl font-medium uppercase" id="insertion-sort">Insertion Sort</h1>
+        <p class="text-base m-4">
+            Insertion Sort
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+    #include&#60;iostream&#62;
+    using namespace std;
+
+    int main() {
+
+    }
+            </code>
+        </pre>
+    </div>
+
+    <div class="list-none m-5 font-mono"> <!-- Bubble Sort -->
+        <h1 class="text-3xl font-medium uppercase" id="bubble-sort">Bubble Sort</h1>
+        <p class="text-base m-4"<pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+
+            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
+        </p>
+        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
+            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
+    #include&#60;iostream&#62;
+    using namespace std;
+
+    int main() {
+        
+    }
+            </code>
+        </pre>
+    </div>
+</main>
+
+    <main>
+        
+    </main>
+
+    <!--Bootstrap JS & Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</body>

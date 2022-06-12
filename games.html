@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -11,68 +10,163 @@
         gtag('config', 'UA-154885375-1');
     </script>
 
-		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--- tailwindcss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css" integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc=" crossorigin="anonymous" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/cb29bc5607.js" crossorigin="anonymous"></script>
+    
+    <!-- Pyp5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="rps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="src/css/styles.css" />
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ahmad Dzuizz</title>
+    
+<!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
+<script src="src/js/sketch.js"></script>
+
+
+    
+    <title>Dzuizz.com</title>
+    
 </head>
 
-<body class="m-h-[100vh] font-mono flex flex-wrap justify-self-center items-center bg-gradient-to-r from-slate-600 to-zinc-400">
-	<div class="left-menu">
-		<div class="py-[30px] px-[10px] w-[200px] text-center text-white font-[20px] logo"><i class="font-[100px] text-[#21CCFC] fa fa-align-justify"></i>
-			<div>Games' Section</div>
-		</div>
-		<div class="text-white w-full accordion">
-			<div class="section">
-				<input type="radio" name="accordion-1" id="section-1" checked="checked"/>
-				<label for="section-1"><span>Home</span></label>
-				<div class="content">
-					<ul class="w-full p-0 m-0 list-none">
-						<li class="p-[10px] hover:cursor-pointer"><i class="w-[15px] mr-[15px] text-[13px] fa fa-home"></i><a href="index.html">Main Page</a></li>
-						<li class="p-[10px] hover:cursor-pointer"><i class="w-[15px] mr-[15px] text-[13px] fa fa-user"></i><a href="family.html">My Family</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="section">
-				<input type="radio" name="accordion-1" id="section-2" value="toggle"/>
-				<label for="section-2"><span>Available Games</span></label>
-				<div class="content">
-					<ul class="w-full p-0 m-0 list-none">
-						<li class="p-[10px] hover:cursor-pointer"><i class="w-[15px] mr-[15px] text-[13px] fa fa-hand-scissors"></i><span>Rock Paper Scissors</span></li>
-						<li class="p-[10px] hover:cursor-pointer"><i class="w-[15px] mr-[15px] text-[13px] fa fa-align-center"></i><span>Tic Tac Toe</span></li>
-						<li class="p-[10px] hover:cursor-pointer"><i class="w-[15px] mr-[15px] text-[13px] fa fa-sitemap"></i><span>Visitation</span></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+<body class="font-mono flex flex-wrap fullscreen m-0 bg-primary z-10">
+    
+<nav class="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-sidebar-900 text-white shadow-lg">
+    <a href="/">
+        <!-- Back -->
+        <i class="sidebar-icon group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z"/>
+            </svg>
+            <span class="sidebar-tooltip group-hover:scale-100">
+                Go to Home Page
+            </span>
+        </i>
+    </a>
+    <button @click="isDark = !isDark">
+        <i class="sidebar-icon group">
+            <!-- Darkmode -->
+            <i class="fa-solid fa-moon"></i>
+            <span class="sidebar-tooltip group-hover:scale-100" id="darkmode-button">
+                Coming soon...
+            </span>
+        </i>
+    </button>
+    <a href="#rock-paper-scissors">
+        <!-- Rock, Paper, Scissors -->
+        <i class="sidebar-icon group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path d="M12.026 14.116c-3.475 1.673-7.504 3.619-8.484 4.09-1.848.889-3.542-1.445-3.542-1.445l8.761-4.226 3.265 1.581zm7.93 6.884c-.686 0-1.393-.154-2.064-.479-1.943-.941-2.953-3.001-2.498-4.854.26-1.057-.296-1.201-1.145-1.612l-14.189-6.866s1.7-2.329 3.546-1.436c1.134.549 5.689 2.747 9.614 4.651l.985-.474c.85-.409 1.406-.552 1.149-1.609-.451-1.855.564-3.913 2.51-4.848.669-.321 1.373-.473 2.054-.473 2.311 0 4.045 1.696 4.045 3.801 0 1.582-.986 3.156-2.613 3.973-1.625.816-2.765.18-4.38.965l-.504.245.552.27c1.613.789 2.754.156 4.377.976 1.624.819 2.605 2.392 2.605 3.97 0 2.108-1.739 3.8-4.044 3.8zm-2.555-12.815c.489 1.022 1.876 1.378 3.092.793 1.217-.584 1.809-1.893 1.321-2.916-.489-1.022-1.876-1.379-3.093-.794s-1.808 1.894-1.32 2.917zm-3.643 3.625c0-.414-.335-.75-.75-.75-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75zm6.777 3.213c-1.215-.588-2.604-.236-3.095.786-.491 1.022.098 2.332 1.313 2.919 1.215.588 2.603.235 3.094-.787.492-1.021-.097-2.33-1.312-2.918z"/>
+            </svg>
+            <span class="sidebar-tooltip group-hover:scale-100">
+                Rock Paper Scissors
+            </span>
+        </i>
+    </a>
+    <a href="#tic-tac-toe">
+        <!-- Tic Tac Toe -->
+        <i class="sidebar-icon group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path d="M6 6h-6v-6h6v6zm9-6h-6v6h6v-6zm9 0h-6v6h6v-6zm-18 9h-6v6h6v-6zm9 0h-6v6h6v-6zm9 0h-6v6h6v-6zm-18 9h-6v6h6v-6zm9 0h-6v6h6v-6zm9 0h-6v6h6v-6z"/>
+            </svg>
+            <span class="sidebar-tooltip group-hover:scale-100">
+                Tic Tac Toe
+            </span>
+        </i>
+    </a>
+    <i class="sidebar-icon group">
+        <span class="sidebar-tooltip group-hover:scale-100">
+            Coming soon...
+        </span>
+    </i>
+</nav>
+<main class="flex flex-col fullscreen ml-16 items-center justify-center">
+    <div class="mx-auto text-center mt-20 items-center font-comfortaa">
+        <h1 class="text-5xl font-medium p-5" id="rock-paper-scissors">
+            Rock Paper Scissors
+        </h1>
+        <article class="text-base">
+            <p class="m-4">
+                Rock Paper Scissors is a game where you play against the computer.<br>
+                The computer will randomly choose a weapon and you will choose one of the below.<br>
+                The game is played with the following weapons:<br>
+                Rock, Paper, Scissors
+            </p>
+            <p>
+                Rocks break scissors, scissors cut paper, and paper covers rock.<br>
+            </p>
+            <b class="justify-center text-xl">Your Score : Computer's Score</b>
+            <h1 class="justify-center text-3xl">
+                <b id="user-score">0</b> : <b id="computer-score">0</b>
+            </h1>
+        </article>
+        <button type="button" class="m-4 p-2 w-40 h-40 bg-green-500 justify-items-stretch rounded max-sm:w-30 transition-all ease-in duration-300 scale-100 opacity-1" id="rock" onclick="move('rock')" pys-onClick="move(1)">
+            <i class="fa-solid fa-hand-back-fist fa-6x"></i>
+        </button>
+        <button type="button" class="m-4 p-2 w-40 h-40 bg-blue-500 justify-items-stretch rounded max-sm:w-30 transition-all ease-in duration-300 scale-100 opacity-1" id="paper" onclick="move('paper')" pys-onClick="move(2)">
+            <i class="fa-solid fa-hand fa-6x"></i>
+        </button>
+        <button type="button" class="m-4 p-2 w-40 h-40 bg-red-500 justify-items-stretch rounded max-sm:w-30 transition-all ease-in duration-300 scale-100 opacity-1" id="scissors" onclick="move('scissors')" pys-onClick="move(3)">
+            <i class="fa-solid fa-hand-scissors fa-6x"></i>
+        </button>
+        <div class="mt-2">
+            <button type="button" class="m-4 p-2 bg-amber-500 rounded" onclick="start_round()" id="round-start">
+                Start Round
+            </button>
+        </div>
+        <b class="font-comfortaa" id="result-text">Try It!</b>
+    </div>
+    <div class="mx-auto text-center mt-20 items-center font-comfortaa">
+        <h1 class="text-5xl font-medium p-5" id="tic-tac-toe">Tic Tac Toe <sub>(in progress...)</sub></h1>
+        <article class="text-base">
+            <p class="m-4">
+                Tic Tac Toe is a game played in a grid of 3x3 squares.<br>
+                The objective is to put your mark in the grid cells until one player wins.
+            </p>
+            <h3 class="font-semibold text-lg">
+                First to put three marks in a row on the grid wins.
+            </h3>
+        </article>
+        <div class="m-2 inline-grid gap-2 grid-cols-3 grid-row-3 justify-between items-center">
+            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="A1"></span>
+            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="A2"></span>
+            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="A3"></span>
+            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="B1"></span>
+            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="B2"></span>
+            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="B3"></span>
+            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="C1"></span>
+            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="C2"></span>
+            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="C3"></span>
+        </div>
+    </div>
+    <div class="mx-auto text-center mt-20 items-center font-comfortaa w-9/12 max_sm:w-6/12">
+        <div class="items-center" id="sketch-holder"></div>
+    </div>
+</main>
+<script src="src/js/games.js"></script>
 
-	<main class="w-full mt-32">
+    <main>
+        
+    </main>
 
-		<div class="mx-auto text-center">
-			<h1 class="text-3xl">Rock Paper Scissors</h1>
-			<button type="button" onclick="round()" class="m-4 p-2 bg-sky-500 rounded" id="round-start">Start a round</button>
-			<div>
-				<div class="p-4 bg-amber-500 rounded inline-block choice">
-					<p class="font-bold" id="computer-score">0</p>
-					<strong>Computer's choice:</strong>
-					<div id="computer-choice"></div>
-				</div>
-				<div class="p-4 bg-sky-500   rounded inline-block choice">
-					<p class="font-bold" id="user-score">0</p>
-					<strong>Your choice:</strong>
-					<div id="user-choice"></div>
-				</div>
-				<div id="result"></div>
-			</div>
-		</div>
-	</main>
-    <script src="rockpaperscissors.js"></script>
+    <!--Bootstrap JS & Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>
-</html>

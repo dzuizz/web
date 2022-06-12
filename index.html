@@ -1,6 +1,4 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-
+<!DOCTYPE html>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
@@ -12,184 +10,1014 @@
         gtag('config', 'UA-154885375-1');
     </script>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--- tailwindcss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css" integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc=" crossorigin="anonymous" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/cb29bc5607.js" crossorigin="anonymous"></script>
+    
+    <!-- Pyp5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="src/css/styles.css" />
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ahmad Dzuizz</title>
+    
+    
+
+    
+    <title>Dzuizz.com</title>
+    
 </head>
 
-<body class="font-mono flex flex-wrap bg-gradient-to-tr from-slate-600 to-zinc-400">
-    <nav class="bg-[#0082e6] h-20 w-full top-0 fixed md:flex-col" id="navbar">
-        <input type="checkbox" class="hidden" id="check">
-        <label for="check" class="checkbtn mr-[40px] leading-[80px] text-[30px] text-white float-right cursor-pointer hidden"><i class="fas fa-bars"></i></label>
-        <label class="logo pt-0 pl-5 pr-[100px] font-bold text-white text-[35px] leading-[80px]"><i class="fa-solid fa-computer-speaker"></i>Dzuizz.com</label>
-        <ul class="mr-[20px] float-right">
-            <li class="mt-0 mx-[5px] leading-[80px] inline-block"><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 bg-[#1b9bff]" href="#"><i class = "h-full fa fa-fw fa-home"></i> Home</a></li>
-            
-            <li class="mt-0 mx-[5px] leading-[80px] inline-block">
-                <div class="relative inline-block dropdown">
-                    <button><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 hover:bg-[#1b9bff] dropbtn" href="family.html"><i class="fa fa-user-circle"></i> My Family</a></button>
-                    
-                    <div class="hidden absolute bg-[#0082e6] m-w-[160px] z-10 dropdown-content" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
-                        <a class="pt-3 px-4 text-white no-underline block hover:bg-[#1b9bff]" href="ayah.html">My Father</a>
-                        <a class="pt-3 px-4 text-white no-underline block hover:bg-[#1b9bff]" href="dzinnun.html">My Younger Brother</a>
-                        <a class="pt-3 px-4 text-white no-underline block hover:bg-[#1b9bff]" href="aisyah.html">My Only Sister</a>
-                    </div>
-                </div>
-            </li>
-            
-            <li class="mt-0 mx-[5px] leading-[80px] inline-block">
-                <div class="relative inline-block dropdown">
-                    <button><a class="font-bold bg-[#0082e6] text-white p-4 font-[16px] rounded-[3px] capitalize hover:duration-500 hover:bg-[#1b9bff] dropbtn" href="games.html"><i class="fa fa-gamepad"></i> Games</a></button>
-                    
-                    <div class="hidden absolute bg-[#0082e6] m-w-[160px] z-10 dropdown-content" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
-                        <a class="pt-3 px-4 text-white no-underline block hover:bg-[#1b9bff]" href="games.html">Rock Paper Scissors</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </nav>
+<body class="font-mono flex flex-wrap fullscreen m-0 bg-primary z-10">
     
-    <main class = "m-2">
-        <div class = "my-20 float-left"><img src = "dzuizz.jpg" alt = "My Picture" width = "320" class=""/></div>
-        <div class = "float-left mx-9 my-24">
-            <p class="flex-wrap break-words">
-                My name is Ahmad Dzuizz Annajib.<br>
-                I was born in Indonesia and have 2 brothers and a sister.<br>
-                I currently study at <a class = "underline text-white" href = "https://irsyad.sg/">Madrasah Irsyad Zuhri Al-Islamiah</a>.<br>
-                My primary strength at school is <b class="text-red-500">Math</b> and my secondary strength is <b class="text-sky-700">Science</b>.<br>
-                Being a technology enthusiast, I pursued the programming interest in 2014 <i>with LEGO Education WeDo 2.0</i>.<br>
-                I have been learning <b class="text-amber-500">C++</b>, <b class="text-sky-600">Pyt</b><b class="text-yellow-300">hon</b>, <b>HTML</b>, and others, since then.<br>
-            </p>
-            <br>
-            <b class = "my-2 text-2xl">My Achievements</b>
-            <div class="flex flex-wrap break-words"> <!--2021-->
-                <h3 class = "font-bold text-lg text-red-500">2021</h3>
-                <ul class = "list-disc mx-10">
-                    <li class = "m-2 z-0"> <!--DrCT-->
-                        <p><b>DrCT Global Finals</b> (Doctor Of Computational Thinking) - <b class = "text-amber-400">GOLD</b> <em>1st Globally</em></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--DrCT-->
-                        <p><b>DrCT</b> (Doctor Of Computational Thinking) - <b class = "text-amber-400">GOLD</b> <em>1st in Singapore and 2nd Globally</em></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--IJMO-->
-                        <p><b>IJMO</b> (International Junior Mathematical Olympiad) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SASMO-->
-                        <p><b>SASMO</b> (Singapore and Asian Schools Mathematical Olympiad) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SMKC-->
-                        <p><b>SMKC</b> (Singapore Mathematical Kangaroo Contest) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--NMOS-->
-                        <p><b>NMOS</b> (National Mathematical Olympiad of Singapore) - <b class = "text-neutral-400">SILVER</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--RIPMWC-->
-                        <p><b>RIPMWC</b> (Raffles Instituition Primary Mathematics World Contest) - <b class = "text-neutral-400">50%</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SMOPS-->
-                        <p><b>SMOPS</b> (Singapore Mathematical Olympiad for Primary Schools) - <b class = "text-neutral-400">SILVER</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--KUMON-->
-                        <p><b>Kumon</b> ASHR (Advanced Student Honour Roll) Mathematics - <b>5 Years Ahead</b></p>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex flex-wrap break-words"> <!--2020-->
-                <h3 class = "font-bold text-lg text-red-500">2020</h3>
-                <ul class = "list-disc mx-10">
-                    <li class = "m-2 z-0"> <!--SMKC-->
-                        <p><b>SMKC</b> (Singapore Mathematics Kangaroo Contest) - <b class = "text-violet-800">Perfect Score</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--DOKA-->
-                        <p><b>DOKA</b> (Depth Of Knowledge Assesment) - <b class = "text-amber-400">HIGH DISTINCTION</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SASMO-->
-                        <p><b>SASMO</b> (Singapore and Asian Schools Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SIMOC-->
-                        <p><b>SIMOC</b> (Singapore International Mathematics Olympiad Challenge) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--DrCT-->
-                        <p><b>DrCT</b> (Doctor of Computational Thinking) - <b class = "text-neutral-400">SILVER</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--AMC-->
-                        <p><b>AMC</b> (Australian Mathematics Olympiad) - <b class = "text-neutral-400">DISTINCTION</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--AMO-->
-                        <p><b>AMO</b> (American Mathematics Olympiad) - <b class = "text-neutral-400">SILVER</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--VANDA GF-->
-                        <p><b>Vanda</b> Global Finals (A Science Olympiad) - <b class = "text-red-900">BRONZE</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--VTMO-->
-                        <p><b>VTMO</b> (Vietnam Titan Mathematical Olympiad) - <b class = "text-red-900">BRONZE</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--KUMON-->
-                        <p><b>Kumon ASHR</b> (Advanced Student Honour Roll) English - <b>3 Years Ahead</b></p>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex flex-wrap break-words"> <!--2019-->
-                <h3 class = "font-bold text-lg text-red-500">2019</h3>
-                <ul class = "list-disc mx-10">
-                    <li class = "m-2 z-0"> <!--YALA-->
-                        <p><b>YALA Scholarship</b> (Young Achievers Learning Academy) - <b class = "text-violet-800">Platinum</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SEF-->
-                        <p><b>SEF</b> (Scholastic Environmental Fund) Oral Competition on Environmental Solutions - <b class = "text-amber-400">GOLD</b> <em>1st</em></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--BEBRAS-->
-                        <p><b>BEBRAS</b> (Lithuanian word for "beaver") Computational Thinking - <b class = "text-amber-400">GOLD</b><em> 2nd in Singapore</em></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SASMO-->
-                        <p><b>SASMO</b> (Singapore and Asian Schools Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SIMOC-->
-                        <p><b>SIMOC</b> (Singapore International Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SMKC-->
-                        <p><b>SMKC</b> (Singapore Mathematics Kangaroo Contest) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--AMO-->
-                        <p><b>AMO</b> (American Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--AMC-->
-                        <p><b>AMC</b> (Australian Mathematics Contest) - <b class = "text-neutral-400">DISTINCTION</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--ICAS SCIENCE-->
-                        <p><b>ICAS Science</b> (A Science Contest) - <b class = "text-neutral-400">DISTINCTION</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--InfoTech-->
-                        <p><b>iOS App Development with Swift Essential</b> (InfoTech) - <b>Accomplishment</b></p>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex flex-wrap break-words"> <!--2018-->
-                <h3 class = "font-bold text-lg text-red-500">2018</h3>
-                <ul class = "list-disc mx-10">
-                    <li class = "m-2 z-0"> <!--SASMO-->
-                        <p><b>SASMO</b> (Singapore and Asian Schools Mathematics Olympiad) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SMKC-->
-                        <p><b>SMKC</b> (Singapore Mathematics Kangaroo Contest) - <b class = "text-amber-400">GOLD</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--AMO-->
-                        <p><b>AMO</b> (American Mathematics Olympiad) - <b class = "text-neutral-400">SILVER</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SIMOC-->
-                        <p><b>SIMOC</b> (Singapore International Mathematics Olympiad Challenge) - <b class = "text-neutral-400">SILVER</b></p>
-                    </li>
-                    <li class = "m-2 z-0"> <!--SAA-->
-                        <p><b>Speech Academy Asia</b> (10 Years Series of Public Speaking) - <b>Completion of Level 1</b></p>
-                    </li>
-                </ul>
+
+    <nav class="sticky top-0 flex items-center bg-gray-800 p-3 flex-wrap w-full">
+        <a href="/" class="p-2 mr-4 inline-flex items-center"> <!-- Logo -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white h-8 w-8 mr-2">
+                <path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"/>
+            </svg>
+            <span class="text-xl text-white font-bold uppercase tracking-wide">
+                Dzuizz.com
+            </span>
+        </a>
+        </button>
+        <div class="w-full sm:inline-flex sm:flex-grow sm:w-auto">
+            <div class="sm:inline-flex sm:flex-row sm:ml-auto sm:w-auto w-full sm:items-center items-start flex sm:h-auto">
+                <a href="/index.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Home</span>
+                </a>
+                <a href="/games.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Games</span>
+                </a>
+                <a href="/family.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>My Family</span>
+                </a>
+                <a href="/algorithms.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Algorithms</span>
+                </a>
             </div>
         </div>
+    </nav>
+    
+<main class="fullscreen float-left mt-3 m-2 text-base">
+    <!-- Biography -->
+    <div class = "float-left mr-4 max_sm:w-6/12"><img src="src/dzuizz.jpg" alt="My Picture" width="320" class=""/></div>
+    <p class="flex-wrap break-words text-stone-900 text-base">
+        My name is Ahmad Dzuizz Annajib.<br>
+        I am an Indonesian boy living in Singapore.<br>
+        I was born in Lamongan, Indonesia in 2010 and I am the eldest of 4 siblings with 2 brothers and a sister.<br>
+        I currently study at <a class = "underline text-indigo-500 decoration-indigo-500" href="https://irsyad.sg/">Madrasah Irsyad Zuhri Al-Islamiah Singapura</a>.<br>
+        My primary strength at school is <b class="text-red-500">Math</b> and my secondary strength is <b class="text-sky-700">Science</b>.<br>
+        I am a member of <a class="underline text-indigo-500 decoration-indigo-500" href="https://www.mensa.org.sg/">MENSA Singapore</a> <b>(The Society for High IQ People)</b>. <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="/static/certs/mensa.jpg" target="_blank">view cert.</a><br>
+        Being a technology enthusiast, I pursued the programming interest in 2014 <i>with LEGO Education WeDo 2.0</i>.<br>
+        I have been learning <b class="text-amber-500">C++</b>, <b class="text-sky-600">Pyt</b><b class="text-yellow-300">hon</b>, <b>HTML</b>, and others, since then.<br>
+    </p>
+    <br>
+
+    <!--Github-->
+    <article class="flex-wrap break-words text-stone-900 text-base mb-2">
+        <b class="text-3xl text-red-800">My Coding Profiles</b><br>
+        <b class="">Github</b>     → <a class="underline underline-offset-1 decoration-sky-500" href="https://github.com/dzuizz">github.com/dzuizz</a><br>
+        <img class="m-2 w-full lg:w-2/4 rounded" src="https://ghchart.rshah.org/dzuizz" alt="My Github Chart"/>
+        
+        <b class="">Codeforces</b> → <a class="underline underline-offset-1 decoration-sky-500" href="https://codeforces.com/profile/dzuizz">codeforces.com/profile/dzuizz</a><br>
+        <div class="m-2" id="codeforces-badge"><img src="https://cp-logo.vercel.app/codeforces/dzuizz" alt=""></div>
+        
+        <b class="">Kattis</b>     → <a class="underline underline-offset-1 decoration-sky-500" href="https://open.kattis.com/users/dzuizz">open.kattis.com/users/dzuizz</a><br>
+        
+        <b class="">mrJudge</b>    → <a class="underline underline-offset-1 decoration-sky-500" href="https://dunjudge.me/users/dzuizz/">dunjudge.me/users/dzuizz</a><br>
+        <svg class="z-[-1]" height="275" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: visible; position: relative; top: -0.898438px; left: -150px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#00ff00" d="M336.5,243.33333333333331A93.33333333333333,93.33333333333333,0,0,0,376.1183261690642,234.50739223684963" stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path><path fill="#00ff00" stroke="#ffffff" d="M336.5,246.33333333333331A96.33333333333333,96.33333333333333,0,0,0,377.39177236735554,237.22370127303407L395.9274892535963,276.76108835527447A140,140,0,0,1,336.5,290Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#ffa400" d="M376.1183261690642,234.50739223684963A93.33333333333333,93.33333333333333,0,0,0,382.4740058763738,231.2250078164986" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#ffa400" stroke="#ffffff" d="M377.39177236735554,237.22370127303407A96.33333333333333,96.33333333333333,0,0,0,383.95174177954294,233.83581163917177L402.9981156426121,267.4861720202926A135,135,0,0,1,393.8050789231107,272.23390662830036Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#ff0000" d="M382.4740058763738,231.2250078164986A93.33333333333333,93.33333333333333,0,0,0,387.05958431350217,228.45278545186892" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#ff0000" stroke="#ffffff" d="M383.95174177954294,233.83581163917177A96.33333333333333,96.33333333333333,0,0,0,388.6847138092933,230.97448212710756L409.6308273106014,263.47635038573895A135,135,0,0,1,402.9981156426121,267.4861720202926Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#808080" d="M387.05958431350217,228.45278545186892A93.33333333333333,93.33333333333333,0,1,0,336.47067846904883,243.333328727518" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#808080" stroke="#ffffff" d="M388.6847138092933,230.97448212710756A96.33333333333333,96.33333333333333,0,1,0,336.46973599126824,246.3333285794739L336.4575884998742,284.9999933380171A135,135,0,1,1,409.6308273106014,263.47635038573895Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="336.5" y="140" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="15px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 15px; font-weight: 800;" font-weight="800" transform="matrix(2.488,0,0,2.488,-500.7204,-220.5997)" stroke-width="0.4019252232142857"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Accepted</tspan></text><text x="336.5" y="160" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 14px;" transform="matrix(2.0072,0,0,2.0072,-338.9122,-153.3414)" stroke-width="0.4982142857142858"><tspan dy="4.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text></svg>
+    </article>
+    <!-- <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+    <div class="calendar">
+        Loading the data just for you.
+    </div>
+    <script>new GitHubCalendar(".calendar", "dzuizz");</script> -->
+    <br>
+
+    <!-- Achievements -->
+    <b class="my-2 text-3xl text-red-800">My Achievements</b>
+    
+        <div class="break-words text-base">
+            <h3 class="font-bold text-base text-rose-600">2022 - Primary 6</h3>
+            <ul class="list-disc mx-10">
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>HCIC</b>
+                            (Hwa Chong Info-communications Challenge) - 
+                            
+                                <b class = "text-violet-800">Platinum</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2022HCIC.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>RIPMWC by Raffles Institution</b>
+                            (Raffles Institution Primary Mathematics World Contest) - 
+                            
+                                <b class = "text-amber-400">DISTINCTION</b>
+                            
+
+                            
+                                <i>Top 3% (97.45 percentile, Achievement Score 49%)</i>
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2022RIPMWC.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SMOPS by Hwa Chong Institution</b>
+                            (Singapore Mathematical Olympiad for Primary Schools) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2022SMOPS.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>Singa Global Final</b>
+                            (International Singapore Mathematics Competition) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2022SINGA.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>VANDA</b>
+                            (International Science Competition) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>BEBRAS</b>
+                            (International Challenge on Informatics and Computational Thinking) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                                <i>1st in Singapore</i>
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2022BEBRAS.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SMKC</b>
+                            (Singapore Mathematical Kangaroo Contest) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2022SMKC.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SASMO</b>
+                            (Singapore and Asian Schools Mathematical Olympiad) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>DrCT</b>
+                            (Design Thinking with Robotics and Computational Thinking International Competition) - 
+                            
+                                <b class = "text-neutral-400">SILVER</b>
+                            
+
+                            
+                            
+                            
+                        </p>
+                    </li>
+                
+            </ul>
+        </div>
+    
+        <div class="break-words text-base">
+            <h3 class="font-bold text-base text-rose-600">2021 - Primary 5</h3>
+            <ul class="list-disc mx-10">
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>RIPMWC by Raffles Institution</b>
+                            (Raffles Institution Primary Mathematics World Contest) - 
+                            
+                                <b class = "text-violet-800">HIGH DISTINCTION</b>
+                            
+
+                            
+                                <i>estimated due to pandemic, 98 percentile, Achievement Score 50%</i>
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021RIPMWC.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>NMOS by NUS High School</b>
+                            (National Mathematical Olympiad of Singapore) - 
+                            
+                                <b class = "text-neutral-400">SILVER</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021NMOS.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SMOPS by Hwa Chong Institution</b>
+                            (Singapore Mathematical Olympiad for Primary Schools) - 
+                            
+                                <b class = "text-neutral-400">SILVER</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021SMOPS.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>Kumon ASHR Mathematics</b>
+                            (Advanced Student Honour Roll) - 
+                            
+                                <b>5 Years Ahead</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021KUMON.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SIMOC Math Olympiad</b>
+                            (Singapore International Mathematics Olympiad Challenge) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021SIMOC.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>IJMO</b>
+                            (International Junior Mathematical Olympiad) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SASMO</b>
+                            (Singapore and Asian Schools Mathematical Olympiad) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021SASMO.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SMKC</b>
+                            (Singapore Mathematical Kangaroo Contest) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021SMKC.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>DrCT Global Finals</b>
+                            (Design Thinking with Robotics and Computational Thinking International Competition) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                                <i>1st Globally</i>
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021DRCTGF.PDF" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>DrCT</b>
+                            (Design Thinking with Robotics and Computational Thinking International Competition) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                                <i>1st in Singapore and 2nd Globally</i>
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021DrCT.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>VANDA</b>
+                            (International Science Competition) - 
+                            
+                                <b class = "text-neutral-400">SILVER</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021VANDA.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>VANDA Global Final Individual</b>
+                            (International Science Competition) - 
+                            
+                                <b class = "text-red-900">BRONZE</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021VANDAGFINDIVIDUAL.PDF" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>VANDA Global Final Team</b>
+                            (International Science Competition) - 
+                            
+                                <b class = "text-red-900">BRONZE</b>
+                            
+
+                            
+                            
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>AMC</b>
+                            (Australian Mathematics Olympiad) - 
+                            
+                                <b class = "text-amber-400">DISTINCTION</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021AMC.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>AMO</b>
+                            (American Mathematics Olympiad) - 
+                            
+                                <b class = "text-neutral-400">SILVER</b>
+                            
+
+                            
+                                <i>1 incorrect answer</i>
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021AMO.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>DOKA</b>
+                            (Depth Of Knowledge Assesment) - 
+                            
+                                <b class = "text-amber-400">DISTINCTION</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021DOKA.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>YALA CSP</b>
+                            (Young Achievers Learning Academy Community Support Project) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                                <i>1st place</i>
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021YALACSP.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>YALA</b>
+                            (Young Achievers Learning Academy) - 
+                            
+                                <b>Active Participation</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2021YALA.pdf" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+            </ul>
+        </div>
+    
+        <div class="break-words text-base">
+            <h3 class="font-bold text-base text-rose-600">2020 - Primary 4</h3>
+            <ul class="list-disc mx-10">
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SMKC</b>
+                            (Singapore Mathematical Kangaroo Contest) - 
+                            
+                                <b class = "text-violet-800">Perfect Score</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2020SMKC.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>DOKA</b>
+                            (Depth Of Knowledge Assesment) - 
+                            
+                                <b class = "text-violet-800">HIGH DISTINCTION</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2020DOKA.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>AMC</b>
+                            (Australian Mathematics Olympiad) - 
+                            
+                                <b class = "text-amber-400">DISTINCTION</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2020AMC.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SASMO</b>
+                            (Singapore and Asian Schools Mathematical Olympiad) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2020SASMO.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SIMOC Mind Sports</b>
+                            (Singapore International Mathematics Olympiad Challenge) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SIMOC Math Olympiad</b>
+                            (Singapore International Mathematics Olympiad Challenge) - 
+                            
+                                <b class = "text-red-900">BRONZE</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2020SIMOC.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SIMOC Math Master Mind</b>
+                            (Singapore International Mathematics Olympiad Challenge) - 
+                            
+                                <b class = "text-red-900">BRONZE</b>
+                            
+
+                            
+                            
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>DrCT</b>
+                            (Design Thinking with Robotics and Computational Thinking International Competition) - 
+                            
+                                <b class = "text-neutral-400">SILVER</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2020DrCT.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>AMO</b>
+                            (American Mathematics Olympiad) - 
+                            
+                                <b class = "text-neutral-400">SILVER</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2020AMO.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>VANDA</b>
+                            (International Science Competition) - 
+                            
+                                <b class = "text-red-900">BRONZE</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2020VANDA.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>VTMO</b>
+                            (Vietnam Titan Mathematical Olympiad) - 
+                            
+                                <b class = "text-red-900">BRONZE</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2020VTMO.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>Kumon ASHR English</b>
+                            (Advanced Student Honour Roll) - 
+                            
+                                <b>3 Years Ahead</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2020KUMON.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+            </ul>
+        </div>
+    
+        <div class="break-words text-base">
+            <h3 class="font-bold text-base text-rose-600">2019 - Primary 3</h3>
+            <ul class="list-disc mx-10">
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>YALA Scholarship</b>
+                            (Young Achievers Learning Academy) - 
+                            
+                                <b class = "text-violet-800">Platinum</b>
+                            
+
+                            
+                            
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SEF</b>
+                            (Scholastic Environmental Fund - theme: "Youth Taking Action to Prevent Negative Impact on Non-Human Environment in Singapore") - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                                <i>1st</i>
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2019SEF.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>BEBRAS</b>
+                            (International Challenge on Informatics and Computational Thinking) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                                <i>2nd in Singapore</i>
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2019BEBRAS.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SASMO</b>
+                            (Singapore and Asian Schools Mathematical Olympiad) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2019SASMO.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SIMOC</b>
+                            (Singapore International Mathematics Olympiad Challenge) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2019SIMOC.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SMKC</b>
+                            (Singapore Mathematical Kangaroo Contest) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2019SMKC.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>AMO</b>
+                            (American Mathematics Olympiad) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2019AMO.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>AMC</b>
+                            (Australian Mathematics Olympiad) - 
+                            
+                                <b class = "text-amber-400">DISTINCTION</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2019AMC.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>ICAS Science</b>
+                            (A Science Contest) - 
+                            
+                                <b class = "text-amber-400">DISTINCTION</b>
+                            
+
+                            
+                            
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>iOS App Development with Swift Essential</b>
+                            (InfoTech) - 
+                            
+                                <b>Accomplishment</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/iOS.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+            </ul>
+        </div>
+    
+        <div class="break-words text-base">
+            <h3 class="font-bold text-base text-rose-600">2018 - Primary 2</h3>
+            <ul class="list-disc mx-10">
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SASMO</b>
+                            (Singapore and Asian Schools Mathematical Olympiad) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2018SASMO.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SMKC</b>
+                            (Singapore Mathematical Kangaroo Contest) - 
+                            
+                                <b class = "text-amber-400">GOLD</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2018SMKC.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>SIMOC</b>
+                            (Singapore International Mathematics Olympiad Challenge) - 
+                            
+                                <b class = "text-neutral-400">SILVER</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2018SIMOC.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>AMO</b>
+                            (American Mathematics Olympiad) - 
+                            
+                                <b class = "text-neutral-400">SILVER</b>
+                            
+
+                            
+                            
+                            
+                                <a class="underline text-cyan-500 decoration-sky-500 decoration-dashed" href="static/certs/2018AMO.jpg" target="_blank">view cert.</a>
+                            
+                        </p>
+                    </li>
+                
+                    <li class="m-2 z-0">
+                        <p class="text-stone-900 text-base">
+                            <b>Speech Academy Asia</b>
+                            (Series of Public Speaking) - 
+                            
+                                <b>Level 1</b>
+                            
+
+                            
+                            
+                            
+                        </p>
+                    </li>
+                
+            </ul>
+        </div>
+    
+</main>
+
+    <main>
+        
     </main>
+
+    <!--Bootstrap JS & Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>
-</html>
