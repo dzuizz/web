@@ -45,7 +45,7 @@
 
 <body class="font-mono flex flex-wrap fullscreen m-0 bg-primary z-10">
     
-<nav class="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-sidebar-900 text-white shadow-lg">
+<nav class="fixed top-0 left-0 h-screen z-50 w-16 m-0 flex flex-col bg-sidebar-900 text-white shadow-lg">
     <a href="/">
         <!-- Back -->
         <i class="sidebar-icon group">
@@ -154,14 +154,12 @@
         </div>
     </div>
     <div class="mx-auto text-center mt-20 items-center font-comfortaa w-9/12 max_sm:w-6/12">
-        <div class="items-center" id="sketch-holder"></div>
+        <h1 class="text-5xl font-medium p-5" id="ping-pong">Ping Pong <sub>(in progress...)</sub></h1>
+        <div class="justify-center items-center" id="sketch-holder"></div>
     </div>
+    <script src="src/js/games.js"></script>
 </main>
-<script src="src/js/games.js"></script>
 
-    <main>
-        
-    </main>
 
     <!--Bootstrap JS & Popper-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

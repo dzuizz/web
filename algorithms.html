@@ -33,7 +33,7 @@
     <meta charset="utf-8" />
 
     
-
+    
 
     
     <title>Dzuizz.com</title>
@@ -52,7 +52,6 @@
                 Dzuizz.com
             </span>
         </a>
-        </button>
         <div class="w-full sm:inline-flex sm:flex-grow sm:w-auto">
             <div class="sm:inline-flex sm:flex-row sm:ml-auto sm:w-auto w-full sm:items-center items-start flex sm:h-auto">
                 <a href="/index.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
@@ -75,540 +74,476 @@
 <main class="fullscreen">
     <div class="flex flex-wrap">
         
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Bellman Ford Algorithm"><a href="#bellman-ford-algorithm" class="mx-1">Bellman Ford Algorithm</a></button>
+            <button class="m-2 family-link border-red-400 hover:bg-red-400" type="button" name="Segment Tree"><a href="#segment-tree" class="mx-1">Segment Tree</a></button>
+        
+            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Disjoint Union Set"><a href="#disjoint-set-union" class="mx-1">Disjoint Union Set</a></button>
+        
+            <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Bellman Ford Algorithm"><a href="#bellman-ford-algorithm" class="mx-1">Bellman Ford Algorithm</a></button>
         
             <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Breadth First Search"><a href="#breadth-first-search" class="mx-1">Breadth First Search</a></button>
         
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Depth First Search"><a href="#depth-first-search" class="mx-1">Depth First Search</a></button>
+            <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Depth First Search"><a href="#depth-first-search" class="mx-1">Depth First Search</a></button>
         
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Binary Search"><a href="#binary-search" class="mx-1">Binary Search</a></button>
+            <button class="m-2 family-link border-red-400 hover:bg-red-400" type="button" name="Binary Search"><a href="#binary-search" class="mx-1">Binary Search</a></button>
         
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Bubble Sort"><a href="#bubble-sort" class="mx-1">Bubble Sort</a></button>
+            <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Dijkstra"><a href="#dijkstra" class="mx-1">Dijkstra</a></button>
         
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Disjoint Union Set"><a href="#disjoint-union-set" class="mx-1">Disjoint Union Set</a></button>
+            <button class="m-2 family-link border-red-400 hover:bg-red-400" type="button" name="Dynamic Programming"><a href="#dynamic-programming" class="mx-1">Dynamic Programming</a></button>
         
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Dijkstra"><a href="#dijkstra" class="mx-1">Dijkstra</a></button>
-        
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Dynamic Programming"><a href="#dynamic-programming" class="mx-1">Dynamic Programming</a></button>
-        
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Floyd Warshall Algorithm"><a href="#floyd-warshall-algorithm" class="mx-1">Floyd Warshall Algorithm</a></button>
+            <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Floyd Warshall Algorithm"><a href="#floyd-warshall-algorithm" class="mx-1">Floyd Warshall Algorithm</a></button>
         
             <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Insertion Sort"><a href="#insertion-sort" class="mx-1">Insertion Sort</a></button>
         
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Minimum Spanning Tree"><a href="#minimum-spanning-tree" class="mx-1">Minimum Spanning Tree</a></button>
+            <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Minimum Spanning Tree"><a href="#minimum-spanning-tree" class="mx-1">Minimum Spanning Tree</a></button>
         
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Segment Tree"><a href="#segment-tree" class="mx-1">Segment Tree</a></button>
+            <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Bubble Sort"><a href="#bubble-sort" class="mx-1">Bubble Sort</a></button>
         
     </div>
     
-    <div class="list-none m-5 font-mono"> <!-- Binary Search -->
-        <h1 class="text-3xl font-medium uppercase" id="binary-search">Binary Search</h1>
-        <p class="flex-wrap text-base m-4">
-            Binary search is a search algorithm that finds the position of a target value within a sorted array.<br>
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-            <p class="flex-wrap ml-2">Given a sorted array of size <b>N</b> and a target value <b>X</b>, find the location of <b>X</b> in the array.<br></p>
-            <pre class="m-2 mt-0 text-base">
-Input:
-  N X
-  A<sub>1</sub> A<sub>2</sub> ... A<sub>N</sub>
-</pre>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-#include&#60;iostream&#62;
-using namespace std;
+    <article class="list-none m-5 font-mono prose" id="binary-search"           ><h1>Binary Search</h1>
+<h4>Binary search is a search algorithm that finds the position of a target value within a sorted array.</h4>
+<blockquote>
+<p>Given a sorted array of size <strong>N</strong> and a target value <strong>X</strong>, find the location of <strong>X</strong> in the array.  </p>
+<p>Input:<br />
+&nbsp;&nbsp;&nbsp;<strong>N</strong> <strong>X</strong><br />
+&nbsp;&nbsp;&nbsp;<strong>A</strong><sub>1</sub> <strong>A</strong><sub>2</sub> ... <strong>A</strong><sub><strong>N</strong></sub><br />
+</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
-int main() {
-    int n, x; cin >> n >> x;
-    int a[n];
-    for(int i = 0; i < n; i++) {
-        cin >> a[i];
-    }
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    int lf = 0, rg = n-1;
-    while (lf < rg) {
-        int mid = (lf + rg) / 2;
-        if (a[mid] >= x) {
-            rg = mid;
-        } else {
-            lf = mid + 1;
-        }
-    }
-    cout << lf << endl; <span class="text-green-600">// or rg</span>
-}
-            </code>
-        </pre>
-    </div>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">lf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">rg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">lf</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">lf</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">rg</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">rg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mid</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">lf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">lf</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">// or rg</span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="depth-first-search"      ><h1>Depth First Search - DFS</h1>
+<h4>Depth First Search is a graph traversal algorithm that finds the shortest path from one point to another in an unweighted graph.</h4>
+<blockquote>
+<p>Given a graph of <strong>N</strong> nodes connected by <strong>M</strong> bidirectional edges which connect nodes <strong>P</strong><sub>i</sub> and <strong>Q</strong><sub>i</sub>, find the shortest path from node <strong>S</strong> to node <strong>E</strong>.  </p>
+<p>Input:<br />
+&nbsp;&nbsp;&nbsp;<strong>N</strong> <strong>M</strong><br />
+&nbsp;&nbsp;&nbsp;<strong>S</strong> <strong>E</strong>  </p>
+<p>&nbsp;&nbsp;&nbsp;<strong>P</strong><sub>1</sub> <strong>Q</strong><sub>1</sub><br />
+&nbsp;&nbsp;&nbsp;<strong>P</strong><sub>2</sub> <strong>Q</strong><sub>2</sub><br />
+&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;<strong>P</strong><sub><strong>M</strong></sub> <strong>Q</strong><sub><strong>M</strong></sub><br />
+</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
-    <div class="list-none m-5 font-mono"> <!-- DFS -->
-        <h1 class="text-3xl font-medium uppercase" id="depth-first-search">Depth First Search</h1>
-        <p class="text-base m-4">
-            Depth First Search is a graph traversal algorithm that finds the shortest path from one point to another in an unweighted graph.<br>
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-            <p class="flex-wrap ml-2">Given a graph of <b>N</b> nodes connected by <b>M</b> bidirectional edges which connect nodes <b>P<sub class="">i</sub></b> and <b>Q<sub class="">i</sub></b>, find the shortest path from node <b>S</b> to node <b>E</b>.</p>
-            <pre class="m-2 mt-0 text-base">
-Input:
-  N M
-  S E
+<span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">;</span><span class="w"></span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">visited</span><span class="p">[</span><span class="n">n</span><span class="p">];</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">INF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e9</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">S</span><span class="p">,</span><span class="w"> </span><span class="n">E</span><span class="p">;</span><span class="w"></span>
 
-  P<sub>1</sub> Q<sub>1</sub>
-  P<sub>2</sub> Q<sub>2</sub>
-  ...
-  P<sub>M</sub> Q<sub>M</sub>
-</pre>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-#include&#60;iostream&#62;
-#include&#60;vector&#62;
-using namespace std;
+<span class="kt">int</span><span class="w"> </span><span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">cur</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">visited</span><span class="p">[</span><span class="n">cur</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cur</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">E</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">INF</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">cur</span><span class="p">].</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">next</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">cur</span><span class="p">][</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">next</span><span class="p">])</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">dis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dfs</span><span class="p">(</span><span class="n">next</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dis</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">min</span><span class="p">(</span><span class="n">res</span><span class="p">,</span><span class="w"> </span><span class="n">dis</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">res</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">INF</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">res</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-vector&#60;vector&#60;int&#62; &#62; adj;
-bool visited[n];
-const int INF = 1e9;
-int S, E;
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">visited</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
 
-int dfs(int cur) {
-    visited[cur] = true;
-    if (cur == E) {
-        return 0;
-    }
-    int res = INF;
-    for (int i = 0; i < adj[cur].size(); i++) {
-        int next = adj[cur][i];
-        if (!visited[next]) {
-            int dis = dfs(next);
-            if (dis != -1) {
-                res = min(res, dis + 1);
-            }
-        }
-    }
-    if (res == INF) return -1;
-    return res;
-}
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">q</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">q</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">adj</span><span class="p">[</span><span class="n">p</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">q</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">adj</span><span class="p">[</span><span class="n">q</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">p</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-int main() {
-    int n, m; cin >> n >> m;
-    visited = vector&#60;int&#62;(n);
+<span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">E</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">dfs</span><span class="p">(</span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="breadth-first-search"    ><h1>Breadth First Search - BFS</h1>
+<h4>Breadth First Search, just like Depth First Search, is a graph traversal algorithm that finds the shortest path from one point to another in an unweighted graph.</h4>
+<blockquote>
+<p>Given a graph of <strong>N</strong> nodes connected by <strong>M</strong> bidirectional edges which connect nodes <strong>P</strong><sub>i</sub> and <strong>Q</strong><sub>i</sub>, find the shortest path from node <strong>S</strong> to node <strong>E</strong>.</p>
+<p>Input:<br />
+&nbsp;&nbsp;&nbsp;<strong>N</strong> <strong>M</strong><br />
+&nbsp;&nbsp;&nbsp;<strong>S</strong> <strong>E</strong>  </p>
+<p>&nbsp;&nbsp;&nbsp;<strong>P</strong><sub>1</sub> <strong>Q</strong><sub>1</sub><br />
+&nbsp;&nbsp;&nbsp;<strong>P</strong><sub>2</sub> <strong>Q</strong><sub>2</sub><br />
+&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;<strong>P</strong><sub><strong>M</strong></sub> <strong>Q</strong><sub><strong>M</strong></sub><br />
+</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;queue&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">ii</span><span class="p">;</span><span class="w"></span>
 
-    for (int i = 0; i < m; i++) {
-        int p, q; cin >> p >> q;
-        adj[p].push_back(q);
-        adj[q].push_back(p);
-    }
+<span class="cp">#define fi node</span>
+<span class="cp">#define se dist</span>
 
-    cin >> S >> E;
-    cout << dfs(S) << endl;
-}
-            </code>
-        </pre>
-    </div>
-    
-    <div class="list-none m-5 font-mono"> <!-- BFS -->
-        <h1 class="text-3xl font-medium uppercase" id="breadth-first-search">Breadth First Search</h1>
-        <p class="text-base m-4">
-            Breadth First Search, just like Depth First Search, is a graph traversal algorithm that finds the shortest path from one point to another in an unweighted graph.
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-            <p class="flex-wrap ml-2">Given a graph of <b>N</b> nodes connected by <b>M</b> bidirectional edges which connect nodes <b>P<sub class="">i</sub></b> and <b>Q<sub class="">i</sub></b>, find the shortest path from node <b>S</b> to node <b>E</b>.</p>
-            <pre class="m-2 mt-0 text-base">
-Input:
-  N M
-  S E
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">e</span><span class="p">;</span><span class="w"></span>
 
-  P<sub>1</sub> Q<sub>1</sub>
-  P<sub>2</sub> Q<sub>2</sub>
-  ...
-  P<sub>M</sub> Q<sub>M</sub>
-</pre>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-#include&#60;iostream&#62;
-#include&#60;queue&#62;
-using namespace std;
-typedef pair&#60;int, int&#62; ii;
+<span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span><span class="w"> </span><span class="n">visited</span><span class="p">;</span><span class="w"></span>
 
-#define fi node
-#define se dist
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">q</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">q</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">adj</span><span class="p">[</span><span class="n">p</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">q</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">adj</span><span class="p">[</span><span class="n">q</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">p</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-int main() {
-    int n, m; cin >> n >> m;
-    int s, e; cin >> s >> e;
+<span class="w">    </span><span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">q</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">q</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">ii</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="n">visited</span><span class="p">[</span><span class="n">s</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">ii</span><span class="w"> </span><span class="n">cur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">top</span><span class="p">();</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cur</span><span class="p">.</span><span class="n">node</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">cur</span><span class="p">.</span><span class="n">dist</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">cur</span><span class="p">.</span><span class="n">node</span><span class="p">].</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">next</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">cur</span><span class="p">.</span><span class="n">node</span><span class="p">][</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">next</span><span class="p">])</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">q</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">ii</span><span class="p">(</span><span class="n">next</span><span class="p">,</span><span class="w"> </span><span class="n">cur</span><span class="p">.</span><span class="n">dist</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">));</span><span class="w"></span>
+<span class="w">                </span><span class="n">visited</span><span class="p">[</span><span class="n">next</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="dijkstra"                ><h1>Dijkstra</h1>
+<h4>Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a weighted graph.</h4>
+<blockquote>
+<p>Given a weighted graph of <strong>N</strong> nodes connected by <strong>E</strong> bidirectional edges with <strong>W</strong><sub>i</sub> which connect nodes <strong>P</strong><sub>i</sub> and <strong>Q</strong><sub>i</sub>, find the shortest path from node <strong>S</strong> to node <strong>E</strong>.  </p>
+<p>Input:<br />
+&nbsp;&nbsp;&nbsp;<strong>N</strong> <strong>E</strong>  </p>
+<p>&nbsp;&nbsp;&nbsp;<strong>P</strong><sub>1</sub> <strong>Q</strong><sub>1</sub> <strong>W</strong><sub>1</sub><br />
+&nbsp;&nbsp;&nbsp;<strong>P</strong><sub>2</sub> <strong>Q</strong><sub>2</sub> <strong>W</strong><sub>2</sub><br />
+&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;<strong>P</strong><sub><strong>M</strong></sub> <strong>Q</strong><sub><strong>M</strong></sub> <strong>W</strong><sub><strong>M</strong></sub>  </p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;queue&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">ii</span><span class="p">;</span><span class="w"></span>
 
-    vector&#60;vector&#60;int&#62; &#62; adj;
-    vector&#60;bool&#62; visited;
+<span class="cp">#define fi node</span>
+<span class="cp">#define se dist</span>
 
-    for (int i = 0; i < n; i++) {
-        int p, q; cin >> p >> q;
-        adj[p].push_back(q);
-        adj[q].push_back(p);
-    }
+<span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">ii</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">;</span><span class="w"></span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">INF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e9</span><span class="p">;</span><span class="w"></span>
 
-    queue&#60;int&#62; q;
-    q.push_back(ii(s, 0));
-    visited[s] = 1;
-    while(!q.empty()) {
-        ii cur = q.top(); q.pop();
-        if (cur.node == e) {
-            cout << cur.dist << endl;
-            return 0;
-        }
-        for (int i = 0; i < adj[cur.node].size(); i++) {
-            int next = adj[cur.node][i];
-            if (!visited[next]) {
-                q.push_back(ii(next, cur.dist + 1));
-                visited[next] = 1;
-            }
-        }
-    }
-}
-            </code>
-        </pre>
-    </div>
-    
-    <div class="list-none m-5 font-mono"> <!-- Dijkstra -->
-        <h1 class="text-3xl font-medium uppercase" id="dijkstra">Dijkstra</h1>
-        <p class="text-base m-4">
-            Dijkstra
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-            <p class="flex-wrap ml-2">Given a weighted graph of <b>N</b> nodes connected by <b>E</b> bidirectional edges with <b>W<sub class="">i</sub></b> which connect nodes <b>P<sub class="">i</sub></b> and <b>Q<sub class="">i</sub></b>, find the shortest path from node <b>S</b> to node <b>E</b>.</p>
-            <pre class="m-2 mt-0 text-base">
-Input:
-  N E
-  P<sub>1</sub> Q<sub>1</sub> W<sub>1</sub>
-  P<sub>2</sub> Q<sub>2</sub> W<sub>2</sub>
-  ...
-  P<sub>M</sub> Q<sub>M</sub> W<sub>M</sub>
-</pre>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-#include&#60;iostream&#62;
-#include&#60;vector&#62;
-#include&#60;queue&#62;
-using namespace std;
-typedef pair&#60;int, int&#62; ii;
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">e</span><span class="p">;</span><span class="w"></span>
 
-#define fi node
-#define se dist
+<span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">distV</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
 
-vector&#60;vector&#60;ii&#62;&#62; adj;
-const int INF = 1e9;
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="n">distV</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">INF</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">e</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="n">w</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">q</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">w</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">adj</span><span class="p">[</span><span class="n">p</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">ii</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="n">w</span><span class="p">));</span><span class="w"></span>
+<span class="w">        </span><span class="n">adj</span><span class="p">[</span><span class="n">q</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">ii</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">w</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-int main() {
-    int n, e; cin >> n >> e;
+<span class="w">    </span><span class="n">priority_queue</span><span class="o">&lt;</span><span class="n">ii</span><span class="o">&gt;</span><span class="w"> </span><span class="n">q</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">q</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">ii</span><span class="p">(</span><span class="o">-</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span><span class="w"></span>
 
-    vector&#60;int&#62; distV(n);
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">ii</span><span class="w"> </span><span class="n">cur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">top</span><span class="p">();</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">curNode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">cur</span><span class="p">.</span><span class="n">node</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">curDist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cur</span><span class="p">.</span><span class="n">dist</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">curNode</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">curDist</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">curNode</span><span class="p">].</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">next</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">curNode</span><span class="p">][</span><span class="n">i</span><span class="p">].</span><span class="n">node</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">curNode</span><span class="p">][</span><span class="n">i</span><span class="p">].</span><span class="n">dist</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">curDist</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">dist</span><span class="p">[</span><span class="n">next</span><span class="p">])</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">dist</span><span class="p">[</span><span class="n">next</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cur</span><span class="p">.</span><span class="n">dist</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">w</span><span class="p">;</span><span class="w"></span>
+<span class="w">                </span><span class="n">q</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">ii</span><span class="p">(</span><span class="o">-</span><span class="n">next</span><span class="p">,</span><span class="w"> </span><span class="n">dist</span><span class="p">[</span><span class="n">next</span><span class="p">]));</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="floyd-warshall-algorithm"><h1>Floyd Warshall Algorithm</h1>
+<h4>The Floyd Warshall Algorithm is an algorithm for finding shortest paths in a directed weighted graph with positive or negative edge weights (but with no negative cycles).</h4>
+<blockquote>
+<p>Given an unweighted graph of <strong>N</strong> nodes and <strong>E</strong> bidirectional edges connecting nodes <strong>A</strong><sub>i</sub> and <strong>B</strong><sub>i</sub>, find the shortest path between two points in each given query of the <strong>Q</strong> queries.</p>
+<p>Input:<br />
+&nbsp;&nbsp;&nbsp;<strong>N</strong> <strong>E</strong><br />
+&nbsp;&nbsp;&nbsp;<strong>A</strong><sub>1</sub> <strong>B</strong><sub>1</sub><br />
+&nbsp;&nbsp;&nbsp;<strong>A</strong><sub>2</sub> <strong>B</strong><sub>2</sub><br />
+&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;<strong>A</strong><sub><strong>E</strong></sub> <strong>B</strong><sub><strong>E</strong></sub><br />
+</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
-    for (int i = 0; i < n; i++) distV[i] = INF;
-    for (int i = 0; i < e; i++) {
-        int p, q, w; cin >> p >> q >> w;
-        adj[p].push_back(ii(q, w));
-        adj[q].push_back(ii(p, w));
-    }
+<span class="kt">int</span><span class="w"> </span><span class="n">dis</span><span class="p">[]</span><span class="w"></span>
 
-    priority_queue&#60;ii&#62; q;
-    q.push_back(ii(-s, 0));
+<span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">e</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="bellman-ford-algorithm"  ><h1>Bellman Ford Algorithm</h1>
+<h4>The Bellman Ford Algorithm is an algorithm that finds if there is a negative cycle in a graph.</h4>
+<blockquote>
+<p>Error 404...  </p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="c1">;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
-    while(!q.empty()) {
-        ii cur = q.top(); q.pop();
-        int curNode = -cur.node;
-        int curDist = cur.dist;
-        if (curNode == e) {
-            cout << curDist << endl;
-            return 0;
-        }
-        for (int i = 0; i < adj[curNode].size(); i++) {
-            int next = adj[curNode][i].node;
-            int w = adj[curNode][i].dist;
-            if (curDist + w < dist[next]) {
-                dist[next] = cur.dist + w;
-                q.push_back(ii(-next, dist[next]));
-            }
-        }
-    }
-}
-</code>
-        </pre>
-    </div>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="dynamic-programming"     ><h1>Dynamic Programming</h1>
+<h4>Dynamic Programming is a method of solving a problem by breaking it down into subproblems and using the results of those subproblems to solve the original problem.</h4>
+<blockquote>
+<p>Error 404...  </p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
-    <div class="list-none m-5 font-mono"> <!-- Floyd Warshall -->
-        <h1 class="text-3xl font-medium uppercase" id="floyd-warshall-algorithm">Floyd Warshall Algorithm</h1>
-        <p class="text-base m-4">
-            Floyd Warshall Algorithm
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-            <p class="flex-wrap ml-2">Given an unweighted graph of <b>N</b> nodes and <b>E</b> bidirectional edges connecting nodes <b>A<sub>i</sub></b> and <b>B<sub>i</sub></b>, find the shortest path between two points in each given query of the <b>Q</b> queries.</p>
-            <pre class="m-2 mt-0 text-base">
-Input:
-  N E
-  
-  A<sub>1</sub> B<sub>1</sub>
-  A<sub>2</sub> B<sub>2</sub>
-  ...
-  A<sub>e</sub> B<sub>e</sub>
-</pre>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-#include&#60;iostream&#62;
-#include&#60;vector&#62;
-using namespace std;
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="segment-tree"            ><h1>Segment Tree</h1>
+<h4>Segment Tree is a data structure that answers queries of a range efficiently, while being able to be modified.</h4>
+<blockquote>
+<p>Given the array <strong>A</strong> with <strong>N</strong> elements find the sum of all elements from <strong>A</strong><sub>i</sub> to <strong>A</strong><sub>j</sub>.  </p>
+<p>Each of the <strong>Q</strong> query consists of 3 integers.<br />
+If the first integer is 1, the query will continue with i and j. Print the sum of all elements from <strong>A</strong><sub>i</sub> to <strong>A</strong><sub>j</sub>.<br />
+If the first integer is 2, the query will continue with <strong>U</strong> and <strong>X</strong>. Replace the element at <strong>A</strong><sub><strong>U</strong></sub> with <strong>X</strong>.  </p>
+<p>Input:<br />
+&nbsp;&nbsp;&nbsp;<strong>N</strong> <strong>Q</strong><br />
+&nbsp;&nbsp;&nbsp;<strong>A</strong><sub>1</sub> <strong>A</strong><sub>2</sub> ... <strong>A</strong><sub><strong>N</strong></sub>  </p>
+<p>&nbsp;&nbsp;&nbsp;1 i j<br />
+&nbsp;&nbsp;&nbsp; <strong>or</strong><br />
+&nbsp;&nbsp;&nbsp;2 <strong>U</strong> <strong>X</strong><br />
+</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
-int dis[]
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">segTree</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"></span>
 
-int main() {
-    int n, e; cin >> n >> e;
-    
-}
-            </code>
-        </pre>
-    </div>
+<span class="kt">void</span><span class="w"> </span><span class="nf">build</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">idx</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">segTree</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">l</span><span class="p">];</span><span class="w"> </span><span class="c1">// or a[r]</span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
 
-    <div class="list-none m-5 font-mono"> <!-- Bellman Ford -->
-        <h1 class="text-3xl font-medium uppercase" id="bellman-ford-algorithm">Bellman Ford Algorithm</h1>
-        <p class="text-base m-4">
-            The Bellman Ford Algorithm is an algorithm that finds if there is a negative cycle in a graph.
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-    #include&#60;iostream&#62;
-    using namespace std;
+<span class="w">    </span><span class="n">build</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">idx</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">build</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">);</span><span class="w"></span>
 
-    int main() {
+<span class="w">    </span><span class="n">segTree</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segTree</span><span class="p">[</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">idx</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">segTree</span><span class="p">[</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">];</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-    }
-            </code>
-        </pre>
-    </div>
+<span class="kt">void</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">idx</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">segTree</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
 
-    <div class="list-none m-5 font-mono"> <!-- Dynamic Programming -->
-        <h1 class="text-3xl font-medium uppercase" id="dynamic-programming">Dynamic Programming</h1>
-        <p class="text-base m-4">
-            Dynamic Programming is a method of solving a problem by breaking it down into subproblems and using the results of those subproblems to solve the original problem.
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-    #include&#60;iostream&#62;
-    using namespace std;
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">mid</span><span class="p">)</span><span class="w"> </span><span class="n">update</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">idx</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="n">update</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span><span class="w"></span>
 
-    int main() {
-        
-    }
-            </code>
-        </pre>
-    </div>
+<span class="w">    </span><span class="n">segTree</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segTree</span><span class="p">[</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">idx</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">segTree</span><span class="p">[</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">];</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-    <div class="list-none m-5 font-mono"> <!-- Segment Tree -->
-        <h1 class="text-3xl font-medium uppercase" id="segment-tree">Segment Tree</h1>
-        <p class="text-base m-4">
-            Segment Tree is a data structure that answers queries of a range efficiently, while being able to be modified.
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-            <p class="flex-wrap ml-2">
-                Given the array <b>A</b> with <b>N</b> elements find the sum of all elements from <b>A<sub class=""><sub class="">i</sub></sub></b> to <b>A<sub class="">j</sub></b>.<br>
-                Each query consists of 3 integers.<br>
-                if the first integer is 1, the query will continue with <b>i</b> and <b>j</b>. Print the sum of all elements from A<sub>i</sub> to A<sub>j</sub>.<br>
-                if the first integer is 2, the query will continue with <b>U</b> and <b>X</b>. Replace the element at <b>A<sub class="">U</sub></b> with <b>X</b>
-            </p>
-            <pre class="m-2 mt-0 text-base">
-Input:
-  N Q
-  A<sub>1</sub> A<sub>2</sub> ... A<sub>N</sub>
+<span class="kt">int</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">idx</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">segTree</span><span class="p">[</span><span class="n">idx</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
 
-  Queries of either type at an arbitrary order.
-  1 i j or
-  2 U X
-</pre>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-#include&#60;iostream&#62;
-#include&#60;vector&#62;
-using namespace std;
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">query</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">idx</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">query</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-vector&#60;int&#62; segTree, a;
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">q</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">q</span><span class="p">;</span><span class="w"></span>
 
-void build(int idx, int l, int r) {
-    if (l == r) {
-        return segTree[idx] = a[l]; <span class="text-green-600">// or a[r]</span>
-    }
-    int mid = (l + r) / 2;
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
 
-    build(2 * idx, l, mid);
-    build(2 * idx + 1, mid + 1, r);
+<span class="w">    </span><span class="n">segTree</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
 
-    segTree[idx] = segTree[2 * idx] + segTree[2 * idx + 1];
-}
+<span class="w">    </span><span class="n">build</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
 
-void update(int idx, int l, int r, int u, int x) {
-    if (l == r) {
-        segTree[idx] = x;
-        return;
-    }
-    int mid = (l + r) / 2;
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">q</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"></span>
 
-    if (x <= mid) update(2 * idx, l, mid, u, x);
-    else update(2 * idx + 1, mid + 1, r, u, x);
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">query</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="n">update</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="minimum-spanning-tree"   ><h1>Minimum Spanning Tree</h1>
+<h4>Minimum Spanning Tree is a data structure that finds the least sum of weights of edges of a weighted graph in order to achieve a goal.</h4>
+<blockquote>
+<p>Error 404...  </p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
-    segTree[idx] = segTree[2 * idx] + segTree[2 * idx + 1];
-}
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="disjoint-set-union"      ><h1>Disjoint Set Union</h1>
+<h4>Disjoint Set Union is a data structure that contains elements which point to another element, repeating this process until it reaches the leader, who points to himself.</h4>
+<blockquote>
+<p>There are n kingdom.<br />
+After every fight between two kingdom, the winner will take the defeated kingdom's resources.<br />
+In each fight, the kingdom with more resources will win.</p>
+<p>Given the number of kingdoms, their initial resources and the fights,<br />
+find the kingdom with the most resources at the end.</p>
+<p>Input:<br />
+&nbsp;&nbsp;&nbsp;<strong>N</strong> <strong>M</strong><br />
+&nbsp;&nbsp;&nbsp;<strong>A</strong><sub><strong>N</strong></sub> <strong>A</strong><sub><strong>N</strong>-1</sub> <strong>A</strong><sub><strong>N</strong>-2</sub> ... <strong>A</strong><sub>1</sub>  </p>
+<p>&nbsp;&nbsp;&nbsp;<strong>P</strong><sub>1</sub> <strong>Q</strong><sub>1</sub><br />
+&nbsp;&nbsp;&nbsp;<strong>P</strong><sub>2</sub> <strong>Q</strong><sub>2</sub><br />
+&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;<strong>P</strong><sub>N</sub> <strong>Q</strong><sub>N</sub><br />
+</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">ii</span><span class="p">;</span><span class="w"></span>
 
-int query(int idx, int l, int r, int x, int y) {
-    if (l <= x && y <= r) {
-        return segTree[idx];
-    } else if (y <= l || x >= r) {
-        return 0;
-    }
-    int mid = (l + r) / 2;
+<span class="cp">#define fi first</span>
+<span class="cp">#define se second</span>
 
-    return query(2 * idx, l, mid, x, y) + query(2 * idx + 1, mid + 1, r, x, y);
-}
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dsu</span><span class="p">;</span><span class="w"> </span><span class="c1">// resources, the kingdom it is under</span>
 
-int main() {
-    int n, q; cin >> n >> q;
+<span class="kt">int</span><span class="w"> </span><span class="nf">find</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dsu</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">dsu</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="n">dsu</span><span class="p">[</span><span class="n">n</span><span class="p">]);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-    for (int i = 0; i < n; i++) cin >> a[i];
+<span class="kt">void</span><span class="w"> </span><span class="nf">merge</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dsu</span><span class="p">[</span><span class="n">x</span><span class="p">].</span><span class="n">fi</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">dsu</span><span class="p">[</span><span class="n">y</span><span class="p">].</span><span class="n">fi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">swap</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    segTree = vector&#60;int&#62;(n);
+<span class="w">    </span><span class="n">dsu</span><span class="p">[</span><span class="n">x</span><span class="p">].</span><span class="n">fi</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dsu</span><span class="p">[</span><span class="n">y</span><span class="p">].</span><span class="n">fi</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">dsu</span><span class="p">[</span><span class="n">y</span><span class="p">].</span><span class="n">se</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-    build(1, 0, n-1);
-    
-    for (int i = 0; i < q; i++) {
-        int type, x, y; cin >> type >> x >> y;
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">dsu</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
 
-        if (type == 1) {
-            cout &#60;&#60; query(1, 0, n-1, x, y);
-        } else {
-            update(1, 0, n-1, x, y);
-        }
-    }
-}
-            </code>
-        </pre>
-    </div>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">dsu</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">fi</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">dsu</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">se</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-    <div class="list-none m-5 font-mono"> <!-- Minimum Spanning Tree -->
-        <h1 class="text-3xl font-medium uppercase" id="minimum-spanning-tree">Minimum Spanning Tree</h1>
-        <p class="text-base m-4">
-            Minimum Spanning Tree is a data structure that finds the least sum of weights of edges of a weighted graph in order to achieve a goal.
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-    #include&#60;iostream&#62;
-    using namespace std;
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">merge</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="insertion-sort"          ><h1>Insertion Sort</h1>
+<h4>Insertion sort is a sorting algorithm that places an unsorted element at its suitable place in each iteration.</h4>
+<blockquote>
+<p>Given an array <strong>A</strong> of size <strong>N</strong>, sort it and output the sorted array.  </p>
+<p>Input:<br />
+&nbsp;&nbsp;&nbsp;<strong>N</strong><br />
+&nbsp;&nbsp;&nbsp;<strong>A</strong><sub>1</sub> <strong>A</strong><sub>2</sub> ... <strong>A</strong><sub><strong>N</strong></sub><br />
+</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
-    int main() {
-        
-    }
-            </code>
-        </pre>
-    </div>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">];</span><span class="w"></span>
 
-    <div class="list-none m-5 font-mono"> <!-- Disjoint Set Union -->
-        <h1 class="text-3xl font-medium uppercase" id="disjoint-set-union">Disjoint Set Union</h1>
-        <p class="text-base m-4">
-            Disjoint Set Union
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-            <pre class="m-2 text-base">
-There are <b>n</b> kingdom. After every fight between two kingdom, the winner will take the defeated kingdom's resources
-In each fight, the kingdom with more resources will win.
-Given the number of kingdoms, their initial resources and the fights,
-Find the kingdom with the most resources at the end.
-Input:
-  N M
-  A<sub>N</sub> A<sub>N-1</sub> A<sub>N-2</sub> ... A<sub>1</sub>
-  P<sub>1</sub> Q<sub>1</sub>
-  P<sub>2</sub> Q<sub>2</sub>
-  ...
-  P<sub>N</sub> Q<sub>N</sub>
-            </pre>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 border-0 font-mono font-[100%] align-baseline hljs xml">
-#include&#60;iostream&#62;
-#include&#60;vector&#62;
-using namespace std;
-typedef pair&#60;int, int&#62; ii;
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">];</span><span class="w"></span>
 
-#define fi first
-#define se second
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">      </span><span class="o">--</span><span class="n">i</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-vector&#60;int&#62; dsu; <span class="text-green-600">// resources, the kingdom it is under</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></article><hr>
+    <article class="list-none m-5 font-mono prose" id="bubble-sort"             ><h1>Bubble Sort</h1>
+<h4>Bubble Sort is a sorting algorithm that repeatedly compares adjacent elements in each iteration until the array is fully sorted.</h4>
+<blockquote>
+<p>Given an array <strong>A</strong> of size <strong>N</strong>, sort it and output the sorted array.  </p>
+<p>Input:<br />
+&nbsp;&nbsp;&nbsp;<strong>N</strong><br />
+&nbsp;&nbsp;&nbsp;<strong>A</strong><sub>1</sub> <strong>A</strong><sub>2</sub> ... <strong>A</strong><sub><strong>N</strong></sub><br />
+</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
-int find(int n) {
-    if (dsu[n] == n) return n;
-    return dsu[n] = find(dsu[n]);
-}
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">];</span><span class="w"></span>
 
-void merge(int x, int y) {
-    x = find(x); y = find(y);
-    if (x == y) return;
-    if (dsu[x].fi < dsu[y].fi) {
-        swap(x, y);
-    }
-    dsu[x].fi += dsu[y].fi;
-    dsu[y].se = x;
-}
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="mi">-1</span><span class="p">])</span><span class="w"> </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="n">swap</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="mi">-1</span><span class="p">]);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-int main() {
-    int n, m; cin >> n >> m;
-    dsu.resize(n);
-
-    for (int i = 0; i < n; i++) {
-        cin >> dsu[i].fi;
-        dsu[i].se = i;
-    }
-
-    for (int i = 0; i < m; i++) {
-        int a, b; cin >> a >> b;
-        merge(a, b);
-    }
-}
-            </code>
-        </pre>
-    </div>
-
-    <div class="list-none m-5 font-mono"> <!-- Insertion Sort -->
-        <h1 class="text-3xl font-medium uppercase" id="insertion-sort">Insertion Sort</h1>
-        <p class="text-base m-4">
-            Insertion Sort
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-    #include&#60;iostream&#62;
-    using namespace std;
-
-    int main() {
-
-    }
-            </code>
-        </pre>
-    </div>
-
-    <div class="list-none m-5 font-mono"> <!-- Bubble Sort -->
-        <h1 class="text-3xl font-medium uppercase" id="bubble-sort">Bubble Sort</h1>
-        <p class="text-base m-4"<pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-
-            <h3 class="text-3xl ml-2 mb-2 font-comfortaa">Here is an example.</h3>
-        </p>
-        <pre class="syntax text-wrap z-[-1] whitespace-pre-wrap pl-8">
-            <code class="text-white m-0 p-0 font-mono border-0 font-[100%] align-baseline hljs xml">
-    #include&#60;iostream&#62;
-    using namespace std;
-
-    int main() {
-        
-    }
-            </code>
-        </pre>
-    </div>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></article><hr>
 </main>
 
-    <main>
-        
-    </main>
 
     <!--Bootstrap JS & Popper-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

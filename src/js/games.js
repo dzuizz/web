@@ -57,8 +57,8 @@ function start_round() {
 
 // Tic Tac Toe
 let grid = ["A1", "A2", "A3",
-	"B1", "B2", "B3",
-	"C1", "C2", "C3"];
+			"B1", "B2", "B3",
+			"C1", "C2", "C3"];
 
 for (let i = 0; i < grid.length; i++) {
 	document.getElementById(grid[i]).addEventListener('click', function () {

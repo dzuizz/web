@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    hr {@apply bg-black h-80;}
+    sub {@apply z-[-5] italic;}
+    .font-quantico {
+        font-family: "Quantico", sans-serif;
+    }
+    .font-comfortaa {
+        font-family: "Comfortaa", cursive;
+    }
+    .font-fira {
+        font-family: "Fira Code", monospace;
+    }
+}
+
+@layer components {
+    code {
+        @apply w-full;
+    }
+    .cpp {
+        @apply m-0 p-0 font-mono border-0 align-baseline ;
+    }
+    .circle {
+        @apply h-[25px];
+    }
+    .syntax {
+        @apply relative p-0 leading-normal left-0 right-0 font-thin w-full whitespace-pre rounded border-solid border-y-[#ff7a59] bg-[#2d3e50] border-y-[.1875rem];
+    }
+    .bg-primary {
+        @apply bg-gradient-to-br from-purple-100 to-pink-100 via-cyan-100;
+    }
+    .fullscreen {
+        @apply w-full h-full;
+    }
+    .family-link {
+        @apply border-2 mx-2 rounded focus:outline-none focus:ring duration-75;
+    }
+    .sidebar-icon {
+        @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-sidebar-800 text-green-500 hover:bg-green-600 hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer;
+    }
+    .sidebar-tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-sidebar-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    }
+    @media (min-width: 1024px) {
+        .top-navbar {
+            display: inline-flex !important;
+        }
+    }
+}
+
+@layer utilities {
+}
