@@ -430,7 +430,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 hr{
-  height: 20rem;
+  height: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
@@ -613,6 +613,43 @@ code{
   transition-duration: 100ms;
 }
 
+/*TODO: Code Highlighter*/
+
+.cp, .k, .kt, .o{
+  --tw-text-opacity: 1;
+  color: rgb(211 115 227 / var(--tw-text-opacity));
+}
+
+.cpf{
+  --tw-text-opacity: 1;
+  color: rgb(140 197 112 / var(--tw-text-opacity));
+}
+
+.nn{
+  --tw-text-opacity: 1;
+  color: rgb(169 178 192 / var(--tw-text-opacity));
+}
+
+.p, .nf{
+  --tw-text-opacity: 1;
+  color: rgb(0 162 255 / var(--tw-text-opacity));
+}
+
+.n{
+  --tw-text-opacity: 1;
+  color: rgb(169 178 192 / var(--tw-text-opacity));
+}
+
+.mi{
+  --tw-text-opacity: 1;
+  color: rgb(219 151 92 / var(--tw-text-opacity));
+}
+
+.c1{
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
 .visible{
   visibility: visible;
 }
@@ -715,18 +752,6 @@ code{
   margin-right: 0.5rem;
 }
 
-.ml-2{
-  margin-left: 0.5rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
-}
-
-.mt-0{
-  margin-top: 0px;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -745,6 +770,18 @@ code{
 
 .mt-3{
   margin-top: 0.75rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.mt-0{
+  margin-top: 0px;
 }
 
 .block{
@@ -1058,16 +1095,6 @@ code{
   line-height: 1.75rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
@@ -1076,6 +1103,16 @@ code{
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-lg{
