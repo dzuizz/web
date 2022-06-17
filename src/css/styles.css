@@ -620,14 +620,9 @@ code{
   color: rgb(211 115 227 / var(--tw-text-opacity));
 }
 
-.cpf{
+.mi, .nb, .mf{
   --tw-text-opacity: 1;
-  color: rgb(140 197 112 / var(--tw-text-opacity));
-}
-
-.nn{
-  --tw-text-opacity: 1;
-  color: rgb(169 178 192 / var(--tw-text-opacity));
+  color: rgb(219 151 92 / var(--tw-text-opacity));
 }
 
 .p, .nf{
@@ -635,19 +630,24 @@ code{
   color: rgb(0 162 255 / var(--tw-text-opacity));
 }
 
-.n{
+.cpf{
   --tw-text-opacity: 1;
-  color: rgb(169 178 192 / var(--tw-text-opacity));
-}
-
-.mi{
-  --tw-text-opacity: 1;
-  color: rgb(219 151 92 / var(--tw-text-opacity));
+  color: rgb(140 197 112 / var(--tw-text-opacity));
 }
 
 .c1{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.nn{
+  --tw-text-opacity: 1;
+  color: rgb(169 178 192 / var(--tw-text-opacity));
+}
+
+.n{
+  --tw-text-opacity: 1;
+  color: rgb(169 178 192 / var(--tw-text-opacity));
 }
 
 .visible{

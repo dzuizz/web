@@ -56,12 +56,12 @@
 
     /*TODO: Code Highlighter*/
     .cp, .k, .kt, .o {@apply text-[#d373e3];}
-    .cpf {@apply text-[#8cc570];}
-    .nn {@apply text-[#a9b2c0];}
+    .mi, .nb, .mf {@apply text-[#db975c];}
     .p, .nf {@apply text-[#00a2ff];}
-    .n {@apply text-[#a9b2c0];}
-    .mi {@apply text-[#db975c];}
+    .cpf {@apply text-[#8cc570];}
     .c1 {@apply text-green-600;}
+    .nn {@apply text-[#a9b2c0];}
+    .n {@apply text-[#a9b2c0];}
 }
 
 @layer utilities {
