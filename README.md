@@ -2,7 +2,7 @@
 
 Made possible with HTML, CSS and JS, my personal website at **[dzuizz.com](https://dzuizz.com/)** contains my CV, some games, my family, and a brief overview of most of the competitive programming algorithms I know.
 
-> Using the power of the ***Pelican Python Library***, and the simplicity of Jinja2 along with some **HTML, CS and **JS**, I coded a static site generator that generates my personal website.
+> Using the power of the ***Pelican Python Library***, and the simplicity of Jinja2 along with some **HTML, CSS and JS**, I coded a static site generator that generates my personal website.
 
 ---
 # The Main Page
