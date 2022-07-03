@@ -625,14 +625,14 @@ code{
   color: rgb(219 151 92 / var(--tw-text-opacity));
 }
 
-.p, .nf{
-  --tw-text-opacity: 1;
-  color: rgb(0 162 255 / var(--tw-text-opacity));
-}
-
 .cpf, .sc, .s{
   --tw-text-opacity: 1;
   color: rgb(140 197 112 / var(--tw-text-opacity));
+}
+
+.p, .nf{
+  --tw-text-opacity: 1;
+  color: rgb(0 162 255 / var(--tw-text-opacity));
 }
 
 .c1{

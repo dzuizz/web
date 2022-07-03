@@ -57,8 +57,8 @@
     /*TODO: Code Highlighter*/
     .cp, .k, .kt, .o {@apply text-[#d373e3];}
     .mi, .nb, .mf {@apply text-[#db975c];}
-    .p, .nf {@apply text-[#00a2ff];}
     .cpf, .sc, .s {@apply text-[#8cc570];}
+    .p, .nf {@apply text-[#00a2ff];}
     .c1 {@apply text-green-600;}
     .nn {@apply text-[#a9b2c0];}
     .n {@apply text-[#a9b2c0];}
