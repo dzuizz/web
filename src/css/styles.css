@@ -630,7 +630,7 @@ code{
   color: rgb(0 162 255 / var(--tw-text-opacity));
 }
 
-.cpf, .sc{
+.cpf, .sc, .s{
   --tw-text-opacity: 1;
   color: rgb(140 197 112 / var(--tw-text-opacity));
 }
