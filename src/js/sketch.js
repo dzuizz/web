@@ -1,8 +1,8 @@
-//! Ping Pong Variables
+// Ping Pong Variables
 let ballX = 0, ballY = 0, score = 0, lives = 5, addX = 4, addY = 4, gameStarted = false;
 
 function setup() {
-    let canvas = createCanvas(720,796);
+    let canvas = createCanvas(1440, screen.height);
     canvas.parent('sketch-holder');
     
     textAlign(CENTER, CENTER);
