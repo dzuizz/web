@@ -65,48 +65,44 @@ let grid = ["A1", "A2", "A3",
 function check() {
 	for (let i = 0; i < 9; i += 3) { // * Check Row
 		if (document.getElementById(grid[i]).innerHTML == document.getElementById(grid[i + 1]).innerHTML &&
-			document.getElementById(grid[i]).innerHTML == document.getElementById(grid[i + 2]).innerHTML) {
-			if (document.getElementById(grid[i]).innerHTML == "X") { // TODO: Player Won
-				// document.getElementById("rps-result-text").innerHTML = "You have won!";
-				game_over = true;
-			} else if (document.getElementById(grid[i]).innerHTML == "O") { // TODO: Computer Won
-				game_over = true;
-			}
+			document.getElementById(grid[i]).innerHTML == document.getElementById(grid[i + 2]).innerHTML &&
+			document.getElementById(grid[i]).innerHTML != "") {
+			document.getElementById(grid[i]).classList.add("text-purple-500");
+			document.getElementById(grid[i + 1]).classList.add("text-purple-500");
+			document.getElementById(grid[i + 2]).classList.add("text-purple-500");
+			game_over = true;
 		}
 	}
 
 	for (let i = 0; i < 3; i++) { // * Check Column
 		if (document.getElementById(grid[i]).innerHTML == document.getElementById(grid[i + 3]).innerHTML &&
-			document.getElementById(grid[i]).innerHTML == document.getElementById(grid[i + 6]).innerHTML) {
-			if (document.getElementById(grid[i]).innerHTML == "X") { // TODO: Player Won
-				// document.getElementById("rps-result-text").innerHTML = "You have won!";
-				game_over = true;
-			} else if (document.getElementById(grid[i]).innerHTML == "O") { // TODO: Computer Won
-				game_over = true;
-			}
+			document.getElementById(grid[i]).innerHTML == document.getElementById(grid[i + 6]).innerHTML &&
+			document.getElementById(grid[i]).innerHTML != "") {
+			document.getElementById(grid[i]).classList.add("text-purple-500");
+			document.getElementById(grid[i + 3]).classList.add("text-purple-500");
+			document.getElementById(grid[i + 6]).classList.add("text-purple-500");
+			game_over = true;
 		}
 	}
 
 	// * Check Left-Right Diagonal
 	if (document.getElementById(grid[0]).innerHTML == document.getElementById(grid[4]).innerHTML &&
-		document.getElementById(grid[0]).innerHTML == document.getElementById(grid[8]).innerHTML) {
-		if (document.getElementById(grid[0]).innerHTML == "X") { // TODO: Player Won
-			// document.getElementById("rps-result-text").innerHTML = "You have won!";
-			game_over = true;
-		} else if (document.getElementById(grid[0]).innerHTML == "O") { // TODO: Computer Won
-			game_over = true;
-		}
+		document.getElementById(grid[0]).innerHTML == document.getElementById(grid[8]).innerHTML &&
+		document.getElementById(grid[0]).innerHTML != "") {
+		document.getElementById(grid[0]).classList.add("text-purple-500");
+		document.getElementById(grid[4]).classList.add("text-purple-500");
+		document.getElementById(grid[8]).classList.add("text-purple-500");
+		game_over = true;
 	}
 
 	// * Check Right-Left Diagonal
 	if (document.getElementById(grid[2]).innerHTML == document.getElementById(grid[4]).innerHTML &&
-		document.getElementById(grid[2]).innerHTML == document.getElementById(grid[6]).innerHTML) {
-		if (document.getElementById(grid[2]).innerHTML == "X") { // TODO: Player Won
-			// document.getElementById("rps-result-text").innerHTML = "You have won!";
-			game_over = true;
-		} else if (document.getElementById(grid[2]).innerHTML == "O") { // TODO: Computer Won
-			game_over = true;
-		}
+		document.getElementById(grid[2]).innerHTML == document.getElementById(grid[6]).innerHTML &&
+		document.getElementById(grid[2]).innerHTML != "") {
+		document.getElementById(grid[2]).classList.add("text-purple-500");
+		document.getElementById(grid[4]).classList.add("text-purple-500");
+		document.getElementById(grid[6]).classList.add("text-purple-500");
+		game_over = true;
 	}
 
 	moves++;
