@@ -2,7 +2,7 @@
 let ballX = 0, ballY = 0, score = 0, lives = 5, addX = 4, addY = 4, gameStarted = false;
 
 function setup() {
-    let canvas = createCanvas(1440, screen.height);
+    let canvas = createCanvas(796, 800);
     canvas.parent('sketch-holder');
     
     textAlign(CENTER, CENTER);

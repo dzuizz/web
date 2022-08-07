@@ -90,12 +90,19 @@
             </span>
         </i>
     </a>
-    <i class="sidebar-icon group">
-        <span class="sidebar-tooltip group-hover:scale-100">
-            Coming soon...
-        </span>
-    </i>
+    <a href="#ping-pong">
+        <!-- Tic Tac Toe -->
+        <i class="sidebar-icon group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <circle cx="12" cy="12" r="12"/>
+            </svg>
+            <span class="sidebar-tooltip group-hover:scale-100">
+                Ping Pong
+            </span>
+        </i>
+    </a>
 </nav>
+
 <main class="flex flex-col fullscreen ml-16 items-center justify-center">
     <div class="mx-auto text-center mt-20 items-center font-comfortaa"> <!--Rock Paper Scissors-->
         <h1 class="text-5xl font-medium p-5" id="rock-paper-scissors">Rock Paper Scissors</h1>
@@ -124,13 +131,13 @@
             <i class="fa-solid fa-hand-scissors fa-6x"></i>
         </button>
         <div class="mt-2">
-            <button type="button" class="m-4 p-2 bg-amber-500 rounded" onclick="start_round()" id="round-start">
+            <button type="button" class="m-4 p-2 bg-amber-500 rounded" onclick="start_rps_round()" id="round-start">
                 Start Round
             </button>
         </div>
         <b class="font-comfortaa" id="rps-result-text">Try It!</b>
     </div>
-    <div class="mx-auto text-center mt-20 items-center font-comfortaa">
+    <div class="mx-auto text-center mt-20 items-center font-comfortaa"> <!--Rock Paper Scissors-->
         <h1 class="text-5xl font-medium p-5" id="tic-tac-toe">Tic Tac Toe</h1>
         <article class="text-base">
             <p class="m-4">
@@ -152,10 +159,15 @@
             <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="C2"></span>
             <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="C3"></span>
         </div>
+        <div class="mt-2">
+            <button type="button" class="m-4 p-2 bg-amber-500 rounded" onclick="start_3t_round()" id="round-start">
+                Reset Board
+            </button>
+        </div>
     </div>
     <div class="mx-auto text-center mt-20 items-center font-comfortaa w-9/12 max_sm:w-6/12">
-        <h1 class="text-5xl font-medium p-5" id="ping-pong">Ping Pong <sub>(in progress...)</sub></h1>
-        <div class="justify-center items-center" id="sketch-holder"></div>
+        <h1 class="text-5xl font-medium p-5" id="ping-pong">Ping Pong</h1>
+        <div class="justify-center items-center p-5" id="sketch-holder"></div>
     </div>
     <script src="src/js/games.js"></script>
 </main>

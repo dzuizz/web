@@ -15,7 +15,7 @@ function move(move) {
 	document.getElementById(move).classList.add('outline', 'scale-110', 'font-xl', 'decoration-indigo-900');
 }
 
-function start_round() {
+function start_rps_round() {
 	computer_move = Math.floor(Math.random() * 3) + 1;
 
 	// * User vs Computer
@@ -108,13 +108,40 @@ function check() {
 	moves++;
 }
 
+function start_3t_round() {
+	game_over = false;
+	moves = 0;
+
+	for (let i = 0; i < grid.length; i++) {
+		document.getElementById(grid[i]).innerHTML = "";
+		document.getElementById(grid[i]).classList.remove("text-purple-500");
+
+		document.getElementById(grid[i]).addEventListener('click', function () {
+			if (document.getElementById(grid[i]).innerHTML == "" && !game_over) {
+				document.getElementById(grid[i]).innerHTML = "X";
+				check();
+	
+				if (moves < 9 && !game_over) {
+					let pos = Math.floor(Math.random() * 9);
+					while (document.getElementById(grid[pos]).innerHTML != "") {
+						pos = Math.floor(Math.random() * 9);
+					}
+					document.getElementById(grid[pos]).innerHTML = "O";
+					check();
+				}
+			}
+		});
+	}
+}
+
 for (let i = 0; i < grid.length; i++) {
+	document.getElementById(grid[i]).innerHTML = "";
 	document.getElementById(grid[i]).addEventListener('click', function () {
 		if (document.getElementById(grid[i]).innerHTML == "" && !game_over) {
 			document.getElementById(grid[i]).innerHTML = "X";
 			check();
 
-			if (moves < 9) {
+			if (moves < 9 && !game_over) {
 				let pos = Math.floor(Math.random() * 9);
 				while (document.getElementById(grid[pos]).innerHTML != "") {
 					pos = Math.floor(Math.random() * 9);
