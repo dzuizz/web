@@ -491,6 +491,7 @@ sub{
 
 code{
   width: 100%;
+  white-space: pre-wrap !important;
 }
 
 .cpp{
@@ -523,6 +524,14 @@ code{
   padding: 0px;
   font-weight: 100;
   line-height: 1.5;
+}
+
+.algorithm{
+  margin: 1.25rem;
+  list-style-type: none;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .bg-primary{
@@ -711,20 +720,20 @@ code{
   margin: 0.5rem;
 }
 
-.m-5{
-  margin: 1.25rem;
-}
-
 .m-4{
   margin: 1rem;
+}
+
+.m-1\.5{
+  margin: 0.375rem;
 }
 
 .m-1{
   margin: 0.25rem;
 }
 
-.m-1\.5{
-  margin: 0.375rem;
+.m-5{
+  margin: 1.25rem;
 }
 
 .mx-1{
@@ -790,10 +799,6 @@ code{
 
 .mt-0{
   margin-top: 0px;
-}
-
-.mr-1\.5{
-  margin-right: 0.375rem;
 }
 
 .mr-1{
@@ -898,16 +903,20 @@ code{
   resize: both;
 }
 
-.list-none{
-  list-style-type: none;
-}
-
 .list-disc{
   list-style-type: disc;
 }
 
+.list-none{
+  list-style-type: none;
+}
+
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -1060,8 +1069,12 @@ code{
   fill: #fff;
 }
 
-.p-3{
-  padding: 0.75rem;
+.p-1\.5{
+  padding: 0.375rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .p-2{
@@ -1072,16 +1085,12 @@ code{
   padding: 1.25rem;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
 .p-0{
   padding: 0px;
-}
-
-.p-1\.5{
-  padding: 0.375rem;
-}
-
-.p-1{
-  padding: 0.25rem;
 }
 
 .px-3{
@@ -1279,12 +1288,12 @@ code{
           text-decoration-style: dashed;
 }
 
-.decoration-1{
-  text-decoration-thickness: 1px;
-}
-
 .decoration-2{
   text-decoration-thickness: 2px;
+}
+
+.decoration-1{
+  text-decoration-thickness: 1px;
 }
 
 .underline-offset-1{
@@ -1307,6 +1316,10 @@ code{
   transition-duration: 150ms;
 }
 
+.duration-200{
+  transition-duration: 200ms;
+}
+
 .duration-75{
   transition-duration: 75ms;
 }
@@ -1317,10 +1330,6 @@ code{
 
 .duration-100{
   transition-duration: 100ms;
-}
-
-.duration-200{
-  transition-duration: 200ms;
 }
 
 .ease-in{
