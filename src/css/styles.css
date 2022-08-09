@@ -719,6 +719,14 @@ code{
   margin: 1rem;
 }
 
+.m-1{
+  margin: 0.25rem;
+}
+
+.m-1\.5{
+  margin: 0.375rem;
+}
+
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -782,6 +790,14 @@ code{
 
 .mt-0{
   margin-top: 0px;
+}
+
+.mr-1\.5{
+  margin-right: 0.375rem;
+}
+
+.mr-1{
+  margin-right: 0.25rem;
 }
 
 .block{
@@ -1263,6 +1279,14 @@ code{
           text-decoration-style: dashed;
 }
 
+.decoration-1{
+  text-decoration-thickness: 1px;
+}
+
+.decoration-2{
+  text-decoration-thickness: 2px;
+}
+
 .underline-offset-1{
   text-underline-offset: 1px;
 }
@@ -1289,6 +1313,14 @@ code{
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-100{
+  transition-duration: 100ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 .ease-in{
