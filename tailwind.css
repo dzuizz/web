@@ -23,7 +23,6 @@
 @layer components {
     code {
         @apply w-full;
-        white-space: pre-wrap !important;
     }
     .cpp {
         @apply m-0 p-0 font-mono border-0 align-baseline ;
@@ -35,7 +34,7 @@
         @apply relative p-0 leading-normal left-0 right-0 font-thin w-full whitespace-pre rounded border-solid border-y-[#ff7a59] bg-[#2d3e50] border-y-[.1875rem];
     }
     .algorithm {
-        @apply list-none m-5 font-mono flex-wrap break-words;
+        @apply list-none m-5 font-mono flex-wrap flex-initial break-words;
     }
     .bg-primary {
         @apply bg-gradient-to-br from-purple-100 to-pink-100 via-cyan-100;
