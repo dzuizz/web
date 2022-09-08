@@ -744,6 +744,11 @@ code{
   margin: 1.25rem;
 }
 
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -769,15 +774,6 @@ code{
   margin-right: 2.5rem;
 }
 
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mr-4{
-  margin-right: 1rem;
-}
-
 .mr-2{
   margin-right: 0.5rem;
 }
@@ -800,6 +796,10 @@ code{
 
 .mt-3{
   margin-top: 0.75rem;
+}
+
+.mr-4{
+  margin-right: 1rem;
 }
 
 .mb-2{
@@ -854,12 +854,16 @@ code{
   display: none;
 }
 
-.h-8{
-  height: 2rem;
-}
-
 .h-screen{
   height: 100vh;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .h-40{
