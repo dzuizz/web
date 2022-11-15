@@ -1,0 +1,247 @@
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-154885375-1');
+    </script>
+
+    <!--- Tailwindcss
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css" integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc=" crossorigin="anonymous" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+     -->
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/cb29bc5607.js" crossorigin="anonymous"></script>
+    
+    <!-- Pyp5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    
+
+    
+    
+    
+    
+    <title>Dzuizz.com - Irsyad | Cikgu Siti</title>
+    
+    
+</head>
+
+<body class="flex flex-wrap fullscreen m-0 bg-primary z-10">
+    
+<div class="card">
+    <div class="img8x">
+        <img src="../src/mdmrosma.jpeg">
+    </div>
+
+    <div class="content">
+        <div class="details">
+            <h2>Cikgu Siti Rahimah<br><span>Best Malay Teacher</span></h2>
+            <div class="data">
+                <h3>Love<br><span>100%</span></h3>
+                <h3>Dedication<br><span>100%</span></h3>
+                <h3>Knowledge<br><span>100%</span></h3>
+            </div>
+            <div class="actionBtn">
+                <button>Follow</button>
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text">
+    <p class="malay">
+        <b>Cikgu Siti</b> yang disayangi, <br>
+        <br>
+        Aku menulis surat ini untuk menunjukkan kesyukuranku kepadamu kerana kamu telah memberiku banyak ilmu tentang Bahasa Melayu. <br>
+        <br>
+        Sebelum kamu mengajarku, saya sangat lemah dalam Bahasa Melayu dan tidak boleh pun menulis karangan panjang. <br>
+        Sekarang, saya lebih yakin dengan potensi saya dalam Bahasa Melayu. <br>
+        Saya amat bersyukur dengan usahamu untuk menolong saya menjadi lebih mahir dalam Bahasa Melayu. <br>
+        Malangnya, perjalanan kita akan pisah. <br>
+        Semoga Allah s.w.t memberikanmu kesihatan yang terbaik. <br>
+        <br>
+        Regards, <br>
+        Ahmad Dzuizz Annajib
+    </p>
+</div>
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900);
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: scroll;
+        background: linear-gradient(45deg, #fbda61, #ff5acd);
+    }
+
+    .card {
+        position: relative;
+        margin: 20px;
+        width: 350px;
+        height: 190px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        height: 450px;
+    }
+
+    .img8x {
+        position: absolute;
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 150px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .card:hover .img8x {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img8x img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card .content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .card .content .details {
+        padding: 40px;
+        text-align: center;
+        width: 100%;
+        transition: 0.5s;
+        transform: translateY(150px);
+    }
+
+    .card:hover .content .details {
+        transform: translateY(0px);
+    }
+
+    .card .content .details h2 {
+        font-size: 1.25em;
+        font-weight: 600;
+        color: #555;
+        line-height: 1.2em;
+    }
+
+    .card .content .details h2 span {
+        font-size: 0.75em;
+        font-weight: 500;
+        opacity: 500;
+    }
+
+    .card .content .details .data {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .card .content .details .data h3 {
+        font-size: 1em;
+        color: #555;
+        line-height: 1.2em;
+        font-weight: 600;
+    }
+
+    .card .content .details .data h3 span {
+        font-size: 0.85em;
+        font-weight: 400;
+        opacity: 0.5;
+    }
+
+    .card .content .details .actionBtn {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 20px; */
+    }
+
+    .card .content .details .actionBtn button {
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        font-weight: 500;
+        background: #ff5f95;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .card .content .details .actionBtn button:nth-child(2) {
+        border: 1px solid #999;
+        color: #999;
+        background: #fff;
+    }
+
+    .text {
+        position: relative;
+        background: #fff;
+        padding: 50px;
+        height: auto;
+        border-radius: 20px;
+        overflow-wrap: initial;
+        margin: 20px;
+    }
+
+    .text p {
+        /* font-size: 1.25em; */
+        font-weight: 500;
+        color: #555;
+        line-height: 1.5em;
+    }
+</style>
+
+
+    <!--Bootstrap JS & Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</body>

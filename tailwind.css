@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
@@ -68,4 +69,8 @@
 }
 
 @layer utilities {
+}
+
+body {
+    min-height: 100vh;
 }
