@@ -884,6 +884,20 @@ code{
   height: 1.25rem;
 }
 
+.h-\[1000vh\]{
+  height: 1000vh;
+}
+
+.h-\[100vh\]{
+  height: 100vh;
+}
+
+.h-fit{
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-full{
   width: 100%;
 }
