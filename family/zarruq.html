@@ -88,7 +88,7 @@
             <p class="mt-2">
                 Hello! I am Ahmad Zarruq.<br>
                 I am the fourth child of my family and the third son of the family.<br>
-                I am currently <span id="month"></span> months old.<br>
+                I am currently <span id="age"></span>.<br>
             </p>
         </article>
     </div>
@@ -101,10 +101,10 @@
     let day = date.getDate();
     let month = date.getMonth();
     let year = date.getFullYear();
-    let text = document.querySelector('#month');
+    let text = document.querySelector('#age');
     let months = (year - 2021) * 12 + month - 12;
 
-    text.innerHTML = months;
+    text.innerHTML = months / 12 + " years old";
 </script>
 
 
