@@ -2,18 +2,9 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'UA-154885375-1');
-    </script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-154885375-1'); </script>
 
-    <!--- Tailwindcss
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css" integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc=" crossorigin="anonymous" />
-     -->
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <!--- Tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- FontAwesome -->
@@ -23,10 +14,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
 
+    <!-- CSS Files -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     
-    <link rel="stylesheet" href="src/css/styles.css" />
+     <link rel="stylesheet" href="src/css/styles.css" />
     
 
     
@@ -34,9 +26,7 @@
 <script src="src/js/sketch.js"></script>
 
     
-    
-    <title>Dzuizz.com - Games</title>
-    
+     <title>Dzuizz.com - Games</title>
     
 </head>
 
@@ -72,87 +62,14 @@
     </nav>
     
 
-<main class="w-full h-full">
-    <div class="mx-auto text-center items-center font-comfortaa">
-        <h1 class="text-5xl font-medium p-5" id="rock-paper-scissors">Rock Paper Scissors</h1>
-        <article class="text-base">
-            <p class="m-4">
-                Rock Paper Scissors is a game where you play against the computer.<br>
-                The computer will randomly choose a weapon and you will choose one of the below.<br>
-                The game is played with the following weapons:<br>
-                Rock, Paper, Scissors
-            </p>
-            <p>
-                Rocks break scissors, scissors cut paper, and paper covers rock.<br>
-            </p>
-            <b class="justify-center text-xl">Your Score : Computer's Score</b>
-            <h1 class="justify-center text-3xl">
-                <b id="user-score">0</b> : <b id="computer-score">0</b>
-            </h1>
-        </article>
-        <button type="button" class="m-4 p-2 w-40 h-40 z-0 bg-green-500 justify-items-stretch rounded max-sm:w-30 transition-all ease-in duration-300 scale-100 opacity-1" id="rock" onclick="move('rock')" pys-onClick="move(1)">
-            <i class="fa-solid fa-hand-back-fist fa-6x"></i>
-        </button>
-        <button type="button" class="m-4 p-2 w-40 h-40 z-0 bg-blue-500 justify-items-stretch rounded max-sm:w-30 transition-all ease-in duration-300 scale-100 opacity-1" id="paper" onclick="move('paper')" pys-onClick="move(2)">
-            <i class="fa-solid fa-hand fa-6x"></i>
-        </button>
-        <button type="button" class="m-4 p-2 w-40 h-40 z-0 bg-red-500 justify-items-stretch rounded max-sm:w-30 transition-all ease-in duration-300 scale-100 opacity-1" id="scissors" onclick="move('scissors')" pys-onClick="move(3)">
-            <i class="fa-solid fa-hand-scissors fa-6x"></i>
-        </button>
-        <div class="mt-2">
-            <button type="button" class="m-4 p-2 bg-amber-500 rounded" onclick="start_rps_round()" id="round-start">
-                Start Round
-            </button>
-        </div>
-        <b class="font-comfortaa" id="rps-result-text">Try It!</b>
-    </div>
-    <div class="mt-20 text-center font-comfortaa">
-        <h1 class="text-3xl">Tic Tac Toe</h1>
-        <article></article>
-    </div>
-    <div class="mt-20 text-center font-comfortaa">
-        <h1 class="text-3xl">Ping Pong</h1>
-        <article></article>
+<main class="w-full mt-3 m-2 text-base">
+    <div>
+        <!-- Rock Paper Scissors -->
+        <!-- Ping Pong -->
+        <!-- Tic Tac Toe -->
+        <!-- Tic Tac Toe in Tic Tac Toe -->
     </div>
 </main>
-
-<script src="src/js/games.js"></script>
-
-<!-- <main class="flex flex-col fullscreen ml-16 items-center justify-center">
-    
-    <div class="mx-auto text-center mt-20 items-center font-comfortaa"> <!--Tic Tac Toe
-        <h1 class="text-5xl font-medium p-5" id="tic-tac-toe">Tic Tac Toe</h1>
-        <article class="text-base">
-            <p class="m-4">
-                Tic Tac Toe is a game played in a grid of 3x3 squares.<br>
-                The objective is to put your mark in the grid cells until one player wins.
-            </p>
-            <h3 class="font-semibold text-lg">
-                First to put three marks in a row on the grid wins.
-            </h3>
-        </article>
-        <div class="m-2 inline-grid gap-2 grid-cols-3 grid-row-3 justify-between items-center">
-            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="A1"></span>
-            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="A2"></span>
-            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="A3"></span>
-            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="B1"></span>
-            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="B2"></span>
-            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="B3"></span>
-            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="C1"></span>
-            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="C2"></span>
-            <span class="w-20 h-20 text-5xl justify-center text-center p-5 bg-sky-500 rounded cursor-default" id="C3"></span>
-        </div>
-        <div class="mt-2">
-            <button type="button" class="m-4 p-2 bg-amber-500 rounded" onclick="start_3t_round()" id="round-start">
-                Reset Board
-            </button>
-        </div>
-    </div>
-    <div class="mx-auto text-center mt-20 items-center font-comfortaa"> <!--Ping Pong
-        <h1 class="text-5xl font-medium p-5" id="ping-pong">Ping Pong</h1>
-        <div class="justify-center items-center p-5" id="sketch-holder"></div>
-    </div>
-</main> -->
 
 
     <!--Bootstrap JS & Popper-->
