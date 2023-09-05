@@ -3,13 +3,10 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
     <script> window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-154885375-1'); </script>
-
-    <!--- Tailwindcss -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+        
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/cb29bc5607.js" crossorigin="anonymous"></script>
-    
+        
     <!-- Pyp5 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
@@ -17,49 +14,64 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     
-     <link rel="stylesheet" href="src/css/styles.css" />
-    
+    <link rel="stylesheet" href="src/css/styles.css" />
 
     
 <script src="src/p5/p5.js"></script>
 <script src="src/js/sketch.js"></script>
 
-    
-     <title>Dzuizz.com - Games</title>
-    
+    <title>Dzuizz.com - Games</title>
 </head>
 
-<body class="flex flex-wrap m-0 bg-primary z-10 h-fit">
+<body class="flex flex-col p-0 m-0 bg-bg content-center place-content-center min-h-screen items-center justify-between">
+
+    <!-- Navbar -->
+    <nav class="fixed flex flex-row bg-bg z-10 p-4 px-12 w-full items-center justify-between text-sm shadow-lg">
+        <!-- Logo -->
+        <div>
+            <a href="/" class="flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-inherit h-8 w-8 mr-2"><path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"></path></svg>
+                <span class="text-2xl inline-block align-middle">
+                    DZUIZZ.COM
+                </span>
+            </a>
+        </div>
+
+        <!-- Menu -->
+        <ul class="w-1/2 flex flex-row justify-between list-none">
+            <li class="group p-2 rounded-md"> <!-- Home -->
+                <a href="/" class="hover:text-primary duration-100">
+                    <span>
+                        Home
+                    </span>
+                </a>
+            </li>
+
+            <li class="group p-2 rounded-md"> <!-- Algorithms -->
+                <a href="/algorithms.html" class="hover:text-primary duration-100">
+                    <span>
+                        Algorithms
+                    </span>
+                </a>
+            </li>
+
+            <li class="group p-2 rounded-md"> <!-- Coming Soon -->
+                <a href="#" class="hover:text-primary duration-100">
+                    <span>
+                        Coming Soon...
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
     
 
-    <nav class="sticky top-0 flex flex-wrap items-center bg-gray-800 p-1.5 w-full">
-        <a href="/" class="p-2 mx-4 inline-flex items-center"> <!-- Logo -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white h-8 w-8 mr-2">
-                <path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"></path>
-            </svg>
-            <span class="text-xl text-white font-bold uppercase tracking-wide">
-                Dzuizz.com
-            </span>
-        </a>
-        
-        <div class="w-full sm:inline-flex sm:flex-grow sm:w-auto">
-            <div class="sm:inline-flex sm:flex-row sm:ml-auto sm:w-auto w-full sm:items-center items-start flex flex-wrap sm:h-auto">
-                <a href="/" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white duration-200">
-                    <span>Home</span>
-                </a>
-                <a href="/games.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white duration-200">
-                    <span>Games</span>
-                </a>
-                <a href="/family.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white duration-200">
-                    <span>My Family</span>
-                </a>
-                <a href="/algorithms.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white duration-200">
-                    <span>Algorithms</span>
-                </a>
-            </div>
-        </div>
-    </nav>
+
     
 
 <main class="w-full mt-3 m-2 text-base">

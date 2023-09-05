@@ -3,13 +3,10 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154885375-1"></script>
     <script> window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-154885375-1'); </script>
-
-    <!--- Tailwindcss -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+        
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/cb29bc5607.js" crossorigin="anonymous"></script>
-    
+        
     <!-- Pyp5 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
@@ -17,88 +14,167 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    
-     <link rel="stylesheet" href="src/css/styles.css" />
-    
 
-     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     
-     <title>Dzuizz.com - Algorithms</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+
     
+    
+    <title>Dzuizz.com - Algorithms</title>
 </head>
 
-<body class="flex flex-wrap m-0 bg-primary z-10 h-fit">
-    
+<body class="flex flex-col p-0 m-0 bg-bg content-center place-content-center min-h-screen items-center justify-between">
 
-    <nav class="sticky top-0 flex flex-wrap items-center bg-gray-800 p-1.5 w-full">
-        <a href="/" class="p-2 mx-4 inline-flex items-center"> <!-- Logo -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-white h-8 w-8 mr-2">
-                <path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"></path>
-            </svg>
-            <span class="text-xl text-white font-bold uppercase tracking-wide">
-                Dzuizz.com
-            </span>
-        </a>
-        
-        <div class="w-full sm:inline-flex sm:flex-grow sm:w-auto">
-            <div class="sm:inline-flex sm:flex-row sm:ml-auto sm:w-auto w-full sm:items-center items-start flex flex-wrap sm:h-auto">
-                <a href="/" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white duration-200">
-                    <span>Home</span>
-                </a>
-                <a href="/games.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white duration-200">
-                    <span>Games</span>
-                </a>
-                <a href="/family.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white duration-200">
-                    <span>My Family</span>
-                </a>
-                <a href="/algorithms.html" class="sm:inline-flex sm:w-auto w-full px-3 py-2 text-center rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white duration-200">
-                    <span>Algorithms</span>
-                </a>
-            </div>
+    <!-- Navbar -->
+    <nav class="fixed flex flex-row bg-bg z-10 p-4 px-12 w-full items-center justify-between text-sm shadow-lg">
+        <!-- Logo -->
+        <div>
+            <a href="/" class="flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-inherit h-8 w-8 mr-2"><path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"></path></svg>
+                <span class="text-2xl inline-block align-middle">
+                    DZUIZZ.COM
+                </span>
+            </a>
         </div>
-    </nav>
-    
 
-<main class="fullscreen">
-    <div class="flex flex-wrap">
-        
-            <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Segment Tree"><a href="#segment-tree" class="mx-1">Segment Tree</a></button>
-        
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Disjoint Union Set"><a href="#disjoint-set-union" class="mx-1">Disjoint Union Set</a></button>
-        
-            <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Minimum Spanning Tree"><a href="#minimum-spanning-tree" class="mx-1">Minimum Spanning Tree</a></button>
-        
-            <button class="m-2 family-link border-red-400 hover:bg-red-400" type="button" name="Dynamic Programming"><a href="#dynamic-programming" class="mx-1">Dynamic Programming</a></button>
-        
-            <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Depth First Search"><a href="#depth-first-search" class="mx-1">Depth First Search</a></button>
-        
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Breadth First Search"><a href="#breadth-first-search" class="mx-1">Breadth First Search</a></button>
-        
-            <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Dijkstra"><a href="#dijkstra" class="mx-1">Dijkstra</a></button>
-        
-            <button class="m-2 family-link border-red-400 hover:bg-red-400" type="button" name="Floyd Warshall Algorithm"><a href="#floyd-warshall-algorithm" class="mx-1">Floyd Warshall Algorithm</a></button>
-        
-            <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Bellman Ford Algorithm"><a href="#bellman-ford-algorithm" class="mx-1">Bellman Ford Algorithm</a></button>
-        
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Quick Sort"><a href="#quick-sort" class="mx-1">Quick Sort</a></button>
-        
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Merge Sort"><a href="#merge-sort" class="mx-1">Merge Sort</a></button>
-        
-            <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Binary Search"><a href="#binary-search" class="mx-1">Binary Search</a></button>
-        
-            <button class="m-2 family-link border-red-400 hover:bg-red-400" type="button" name="Insertion Sort"><a href="#insertion-sort" class="mx-1">Insertion Sort</a></button>
-        
-            <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Bubble Sort"><a href="#bubble-sort" class="mx-1">Bubble Sort</a></button>
-        
-            <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Selection Sort"><a href="#selection-sort" class="mx-1">Selection Sort</a></button>
-        
-            <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Counting Sort"><a href="#counting-sort" class="mx-1">Counting Sort</a></button>
-        
-    </div>
+        <!-- Menu -->
+        <ul class="w-1/2 flex flex-row justify-between list-none">
+            <li class="group p-2 rounded-md"> <!-- Home -->
+                <a href="/" class="hover:text-primary duration-100">
+                    <span>
+                        Home
+                    </span>
+                </a>
+            </li>
+
+            <li class="group p-2 rounded-md"> <!-- Algorithms -->
+                <a href="/algorithms.html" class="hover:text-primary duration-100">
+                    <span>
+                        Algorithms
+                    </span>
+                </a>
+            </li>
+
+            <li class="group p-2 rounded-md"> <!-- Coming Soon -->
+                <a href="#" class="hover:text-primary duration-100">
+                    <span>
+                        Coming Soon...
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
     
-    <div class="flex flex-row flex-wrap">
-        <!-- Data Structures -->
-        <article class="algorithm prose" id="segment-tree"            ><h1>Segment Tree</h1>
+    <main class="px-4 pt-20 w-full h-full">
+
+        <header>
+            <ul class="flex flex-wrap justify-between">
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#dijkstra">Dijkstra</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#quick-sort">Quick Sort</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#merge-sort">Merge Sort</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#bubble-sort">Bubble Sort</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#segment-tree">Segment Tree</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#binary-search">Binary Search</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#counting-sort">Counting Sort</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#insertion-sort">Insertion Sort</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#selection-sort">Selection Sort</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#disjoint-set-union">Disjoint Union Set</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#depth-first-search">Depth First Search</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#dynamic-programming">Dynamic Programming</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#breadth-first-search">Breadth First Search</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#minimum-spanning-tree">Minimum Spanning Tree</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#bellman-ford-algorithm">Bellman Ford Algorithm</a>
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="inline-block m-4 px-4 py-1 text-bg rounded bg-primary transition transition-200 ease-in-out hover:shadow-2xl hover:shadow-primary hover:-translate-y-1" type="button">
+                        <a href="#floyd-warshall-algorithm">Floyd Warshall Algorithm</a>
+                    </button>
+                </li>
+                
+            </ul>
+        </header>
+        
+        <div class="flex flex-row flex-wrap justify-around">
+            <!-- Data Structures -->
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="segment-tree"            ><h1>Segment Tree</h1>
 <h4>Segment Tree is a data structure that answers queries of a range efficiently, while being able to be modified.</h4>
 <blockquote>
 <p>Given the array <strong>A</strong> with <strong>N</strong> elements find the sum of all elements from <strong>A</strong><sub>i</sub> to <strong>A</strong><sub>j</sub>.  </p>
@@ -174,8 +250,8 @@ If the first integer is 2, the query will continue with <strong>U</strong> and <
 <span class="w">        </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="disjoint-set-union"      ><h1>Disjoint Set Union</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="disjoint-set-union"      ><h1>Disjoint Set Union</h1>
 <h4>Disjoint Set Union is a data structure that contains elements which point to another element, repeating this process until it reaches the leader, who points to himself.</h4>
 <blockquote>
 <p>There are n kingdom.<br />
@@ -232,8 +308,8 @@ find the kingdom with the most resources at the end.</p>
 <span class="w">        </span><span class="n">merge</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="minimum-spanning-tree"   ><h1>Minimum Spanning Tree</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="minimum-spanning-tree"   ><h1>Minimum Spanning Tree</h1>
 <h4>Minimum Spanning Tree is a data structure that finds the least sum of weights of edges of a weighted graph in order to achieve a goal.</h4>
 <blockquote>
 <p>Problem not found...  </p>
@@ -242,10 +318,10 @@ find the kingdom with the most resources at the end.</p>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        
-        <!-- defer - Other Algorithms -->
-        <article class="algorithm prose" id="dynamic-programming"     ><h1>Dynamic Programming</h1>
+</code></pre></div></article>
+                
+            <!-- Other Algorithms -->
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="dynamic-programming"     ><h1>Dynamic Programming</h1>
 <h4>Dynamic Programming is a method of solving a problem by breaking it down into subproblems and using the results of those subproblems to solve the original problem.</h4>
 <blockquote>
 <p>Given an array of size <strong>N</strong>, find the length of the <a href="https://en.wikipedia.org/wiki/Longest_increasing_subsequence">Longest Increasing Subsequence</a> <strong><em>(Strictly Increasing)</em></strong>.
@@ -280,8 +356,8 @@ find the kingdom with the most resources at the end.</p>
 
 <span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">ans</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="binary-search"           ><h1>Binary Search</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="binary-search"           ><h1>Binary Search</h1>
 <h4>Binary search is a search algorithm that finds the position of a target value within a sorted array.</h4>
 <blockquote>
 <p>Given a sorted array of size <strong>N</strong> and a target value <strong>X</strong>, find the location of <strong>X</strong> in the array.  </p>
@@ -311,9 +387,10 @@ find the kingdom with the most resources at the end.</p>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">lf</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">// or rg</span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <!-- Graph Algorithms -->
-        <article class="algorithm prose" id="depth-first-search"      ><h1>Depth First Search - DFS</h1>
+</code></pre></div></article>
+
+            <!-- Graph Algorithms -->
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="depth-first-search"      ><h1>Depth First Search - DFS</h1>
 <h4>Depth First Search is a graph traversal algorithm that finds the shortest path from one point to another in an unweighted graph.</h4>
 <blockquote>
 <p>Given a graph of <strong>N</strong> nodes connected by <strong>M</strong> bidirectional edges which connect nodes <strong>P</strong><sub>i</sub> and <strong>Q</strong><sub>i</sub>, find the shortest path from node <strong>S</strong> to node <strong>E</strong>.  </p>
@@ -367,8 +444,8 @@ find the kingdom with the most resources at the end.</p>
 <span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">E</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">dfs</span><span class="p">(</span><span class="n">S</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="breadth-first-search"    ><h1>Breadth First Search - BFS</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="breadth-first-search"    ><h1>Breadth First Search - BFS</h1>
 <h4>Breadth First Search, just like Depth First Search, is a graph traversal algorithm that finds the shortest path from one point to another in an unweighted graph.</h4>
 <blockquote>
 <p>Given a graph of <strong>N</strong> nodes connected by <strong>M</strong> bidirectional edges which connect nodes <strong>P</strong><sub>i</sub> and <strong>Q</strong><sub>i</sub>, find the shortest path from node <strong>S</strong> to node <strong>E</strong>.</p>
@@ -420,8 +497,8 @@ find the kingdom with the most resources at the end.</p>
 <span class="w">        </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="dijkstra"                ><h1>Dijkstra</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="dijkstra"                ><h1>Dijkstra</h1>
 <h4>Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a weighted graph.</h4>
 <blockquote>
 <p>Given a weighted graph of <strong>N</strong> nodes connected by <strong>E</strong> bidirectional edges with <strong>W</strong><sub>i</sub> which connect nodes <strong>P</strong><sub>i</sub> and <strong>Q</strong><sub>i</sub>, find the shortest path from node <strong>S</strong> to node <strong>E</strong>.  </p>
@@ -477,8 +554,8 @@ find the kingdom with the most resources at the end.</p>
 <span class="w">        </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="floyd-warshall-algorithm"><h1>Floyd Warshall Algorithm</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="floyd-warshall-algorithm"><h1>Floyd Warshall Algorithm</h1>
 <h4>The Floyd Warshall Algorithm is an algorithm for finding shortest paths in a directed weighted graph with positive or negative edge weights (but with no negative cycles).</h4>
 <blockquote>
 <p>Given an unweighted graph of <strong>N</strong> nodes and <strong>E</strong> bidirectional edges connecting nodes <strong>A</strong><sub>i</sub> and <strong>B</strong><sub>i</sub>, find the shortest path between two points in each given query of the <strong>Q</strong> queries.</p>
@@ -532,8 +609,8 @@ find the kingdom with the most resources at the end.</p>
 <span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">dis</span><span class="p">[</span><span class="n">a</span><span class="p">][</span><span class="n">b</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="bellman-ford-algorithm"  ><h1>Bellman Ford Algorithm</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="bellman-ford-algorithm"  ><h1>Bellman Ford Algorithm</h1>
 <h4>The Bellman Ford Algorithm is an algorithm that finds if there is a negative cycle in a graph.</h4>
 <blockquote>
 <p>Problem not found...  </p>
@@ -542,10 +619,10 @@ find the kingdom with the most resources at the end.</p>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span><span class="w"></span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        
-        <!-- Search & Sorting Algorithms -->
-        <article class="algorithm prose" id="quick-sort"              ><h1>Quick Sort</h1>
+</code></pre></div></article>
+            
+            <!-- Search & Sorting Algorithms -->
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="quick-sort"              ><h1>Quick Sort</h1>
 <h4>Quick Sort is a sorting algorithm that works by selecting a pivot point and then partitioning the array into two subarrays.</h4>
 <blockquote>
 <p>Given an array of size <strong>N</strong>,<br />
@@ -595,8 +672,8 @@ Output the array in ascending order.  </p>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="merge-sort"              ><h1>Merge Sort</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="merge-sort"              ><h1>Merge Sort</h1>
 <h4>Merge Sort is a sorting algorithm that works like the strategy of <a href="https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm">divide-and-conquer</a>. It splits the array into two and combining them sorted by repeating the same process on each subset.</h4>
 <blockquote>
 <p>Given an array of size <strong>N</strong>,<br />
@@ -649,8 +726,8 @@ Output the array in ascending order.  </p>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="insertion-sort"          ><h1>Insertion Sort</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="insertion-sort"          ><h1>Insertion Sort</h1>
 <h4>Insertion sort is a sorting algorithm that places an unsorted element at its suitable place in each iteration.</h4>
 <blockquote>
 <p>Given an array <strong>A</strong> of size <strong>N</strong>, sort it and output the sorted array.  </p>
@@ -680,8 +757,8 @@ Output the array in ascending order.  </p>
 <span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="bubble-sort"             ><h1>Bubble Sort</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="bubble-sort"             ><h1>Bubble Sort</h1>
 <h4>Bubble Sort is a sorting algorithm that repeatedly compares adjacent elements in each iteration until the array is fully sorted.</h4>
 <blockquote>
 <p>Given an array <strong>A</strong> of size <strong>N</strong>, sort it and output the sorted array.  </p>
@@ -708,8 +785,8 @@ Output the array in ascending order.  </p>
 <span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div></article><hr>
-        <article class="algorithm prose" id="selection-sort"          ><h1>Selection Sort</h1>
+</code></pre></div></article>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="selection-sort"          ><h1>Selection Sort</h1>
 <h4>Selection Sort is a sorting algorithm that is similar to bubble sort but swaps the minimum of what is unsorted in the array with where it is supposed to be instead of swapping adjacent elements if in the wrong order in bubble sort.</h4>
 <blockquote>
 <p>Given an array of size <strong>N</strong>,<br />
@@ -746,7 +823,7 @@ Output the array in ascending order.  </p>
 <span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div></article>
-        <article class="algorithm prose" id="counting-sort"           ><h1>Counting Sort</h1>
+            <article class="prose prose-invert p-6 my-6 rounded shadow list-none font-sans tracking-wide flex-wrap flex-initial break-words  prose-h1:text-text prose-h2:text-text prose-h3:text-text prose-h4:text-text prose-p:text-text bg-slate-800" id="counting-sort"           ><h1>Counting Sort</h1>
 <h4>Counting Sort is a sorting algorithm that uses the frequencies of the values in the input array to determine the order of the values in the output array.</h4>
 <blockquote>
 <p>Given a sorted array <strong>A</strong> of size <strong>N</strong>, output the array <strong>A</strong> but sorted in ascending order.  </p>
@@ -779,8 +856,46 @@ Output the array in ascending order.  </p>
 <span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div></article>
-    </div>
-</main>
+        </div>
+        
+        <!--
+        <div class="flex flex-wrap">
+            
+                <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Dijkstra"><a href="#dijkstra" class="mx-1">Dijkstra</a></button>
+            
+                <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Quick Sort"><a href="#quick-sort" class="mx-1">Quick Sort</a></button>
+            
+                <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Merge Sort"><a href="#merge-sort" class="mx-1">Merge Sort</a></button>
+            
+                <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Bubble Sort"><a href="#bubble-sort" class="mx-1">Bubble Sort</a></button>
+            
+                <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Segment Tree"><a href="#segment-tree" class="mx-1">Segment Tree</a></button>
+            
+                <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Binary Search"><a href="#binary-search" class="mx-1">Binary Search</a></button>
+            
+                <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Counting Sort"><a href="#counting-sort" class="mx-1">Counting Sort</a></button>
+            
+                <button class="m-2 family-link border-red-400 hover:bg-red-400" type="button" name="Insertion Sort"><a href="#insertion-sort" class="mx-1">Insertion Sort</a></button>
+            
+                <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Selection Sort"><a href="#selection-sort" class="mx-1">Selection Sort</a></button>
+            
+                <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Disjoint Union Set"><a href="#disjoint-set-union" class="mx-1">Disjoint Union Set</a></button>
+            
+                <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Depth First Search"><a href="#depth-first-search" class="mx-1">Depth First Search</a></button>
+            
+                <button class="m-2 family-link border-red-400 hover:bg-red-400" type="button" name="Dynamic Programming"><a href="#dynamic-programming" class="mx-1">Dynamic Programming</a></button>
+            
+                <button class="m-2 family-link border-sky-500 hover:bg-sky-500" type="button" name="Breadth First Search"><a href="#breadth-first-search" class="mx-1">Breadth First Search</a></button>
+            
+                <button class="m-2 family-link border-amber-500 hover:bg-amber-500" type="button" name="Minimum Spanning Tree"><a href="#minimum-spanning-tree" class="mx-1">Minimum Spanning Tree</a></button>
+            
+                <button class="m-2 family-link border-green-500 hover:bg-green-500" type="button" name="Bellman Ford Algorithm"><a href="#bellman-ford-algorithm" class="mx-1">Bellman Ford Algorithm</a></button>
+            
+                <button class="m-2 family-link border-red-400 hover:bg-red-400" type="button" name="Floyd Warshall Algorithm"><a href="#floyd-warshall-algorithm" class="mx-1">Floyd Warshall Algorithm</a></button>
+            
+        </div>
+        -->
+    </main>
 
 
     <!--Bootstrap JS & Popper-->

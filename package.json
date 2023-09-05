@@ -4,8 +4,8 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "dev": "npx tailwindcss -i tailwind.css -o src/css/styles.css --watch",
-    "prod": "npx tailwindcss -i tailwind.css -o src/css/styles.css --minify"
+    "dev": "npx tailwindcss -i globals.css -o src/css/styles.css --watch",
+    "prod": "npx tailwindcss -i globals.css -o src/css/styles.css --minify"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/dzuizz/web-flask#readme",
   "devDependencies": {
-    "tailwindcss": "^3.0.24"
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
   },
   "dependencies": {
     "pupeteer": "^0.0.1",
